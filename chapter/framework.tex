@@ -1,0 +1,52 @@
+\documentclass[../tesi.tex]{subfiles}
+\begin{document}
+\chapter{Orchestrazione di Flussi di lavoro}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.9\textwidth]{MLops.jpg} 
+  \caption{MLops}
+  \end{figure}
+
+Dopo aver visto che tra i vari casi di studio troviamo una linea comune nella pipeline di utilizzo del Machine Learning, proviamo automatizzare le invarianti trovate nel capitolo precedente.\\
+Negli ultimi anni i ricercatori stanno implementando diversi framework automatici che ci danno la possibilità di automatizzare il flusso di lavoro per la costruzione del modello.\\
+Come visto in precedenza intendiamo: raccolta dati, creazione e implementazione del modello e successivamente alla distribuzione permettono la riproduzione e il monitoraggio.\\
+Le pipeline ML, inoltre, aiutano a migliorare le prestazioni e la gestione dell'intero modello.
+Possiamo semplicemente semplificare lo schema visto in precedenza come segue, lasciando la gestione del modello assegnata al framework.\\
+Gli strumenti per l’orchestrazione ML sono usati per automatizzare e gestire i workflow e le infrastrutture delle pipeline con semplici interfacce, aiutando i data scientists e al team di ML di concentrarsi solo sul necessario.\\
+Orchestrare un flusso di lavoro è fondamentale per un’azienda che investe nel ML, perciò è necessario capire come automatizzare il maggior numero di risorse, tra cui l’estrazione dell’output del modello con dei monitoraggi costanti durante la fase di produzione.\\
+Questi campi che stiamo analizzando sono un sottoinsieme di MLOps: un insieme di pratiche per la collaborazione e la comunicazione tra data scientist e professionisti delle operazioni. Applicando queste tecniche pratiche aumenta la qualità finale, semplifica il processo di gestione e automatizza l’implementazione di modelli di ML e DL in ambienti di produzione su larga scala(schema sottostante)
+
+  \section{Framework}
+  \subsection{ZenML} 
+  ZenML è uno strumento open-source per operazione di ML.
+  Lo strumento si focalizza sui problemi di riproduzioni basati sulla produzione, come le difficoltà di versioning e modelli, organizzazione di workflow di ML e la distribuzione. Può lavorare a fianco a un altro strumento di orchestrazione dei flussi di lavoro per fornire un semplice percorso per rilasciare il modello ML in produzione.\\
+  È possibile verificare con precisione dati, modelli e configurazioni. Ti consente di valutare in maniera semi-automatica il modello, confrontare le pipeline di addestramento e distribuire la preelaborazione nel cloud.
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.9\textwidth]{zenML.png} 
+    \caption{ZenML}
+    \end{figure}
+  
+  \subsection{Kedro}
+Kedro é uno strumento open-source di orchestrazione basato su Python, che permette di creare workflow per ML riproducibili, mantenibili e modulari, semplificando i processi e rendendoli più accurati.\\
+Kedro integra l’ingegneria del software in un ambiente di apprendimento automatico, con concetti quali: modularità, divisione degli interessi e versioning.\\
+Astraendo la pipeline, è possibile automatizzare le dipendenze tra il codice Python e la visualizzazione del Workflow. L’obiettivo principale è la creazione di codice di data science gestibile per affrontare le carenze di Jupiter(applicazione web open-source, utile per condividere documenti che contengono codice live, equazioni e grafi ecc.)\\
+Questo strumento crea un lavoro di squadra più semplice a vari livelli, e fornisce un efficiente ambiente di coding con codice modulare e riusabile.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.9\textwidth]{KedroPipeline.png} 
+  \caption{Kedro}
+  \end{figure}  
+\subsection{Flyte}
+Flyte è uno strumento open-source di alta fascia che permette di facilitare la creazione di flussi di lavoro del ML. È una piattaforma di programmazione ad elaborazione distribuita e strutturata, con flussi di lavoro concorrenti, scalabili e mantenibili per l’apprendimento automatico e l’elaborazione dei dati.\\
+Flyte gestisce già più di dieci mila workflow, è basato su Kubernetes e offre portabilità, scalabilità e affidabilità.\\
+L’interfaccia è elastica, intuitiva e facile da usare; offre inoltre parametri, linee di dati e caching per organizzare i workflow.\\
+L’intera piattaforma è dinamica ed estensibile attraverso vari plug-in per assistere la creazione e l’implementazione dei vari workflow. Tali Workflow, a loro volta, possono essere reiterati, annullati, sperimentati e condivisi per accelerare il processo di sviluppo dell’intero team.\\
+Poiché ogni entità in Flyte è immutabile, insieme a ogni modifica esplicita assunta come nuova versione, diventa semplice ed efficiente iterare, sperimentare e tornare indietro nei Workflow.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.9\textwidth]{Flyte.png} 
+  \caption{Flyte Console}
+  \end{figure}
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[italian]{babel}
+\usepackage{newlfont}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage[automake]{glossaries-extra}
+\usepackage{subfiles}
+\graphicspath{ {./image/} }
+
+\makeglossaries
+
+
+\newcommand{\chapquote}[3]{\begin{quotation} \textit{#1} \end{quotation} \begin{flushright} - #2, \textit{#3}\end{flushright} }
+\textwidth=450pt\oddsidemargin=0pt
+\begin{document}
+
+\subfile{frontespizio}
+
+%blank page instruction ------
+\begingroup
+  \pagestyle{empty}
+  \null
+  \newpage  
+\endgroup
+
+\tableofcontents
+
+%Chapter 1: Introduction
+\subfile{chapter/introduzione}
+
+%Chapter 2: Case Study
+\subfile{chapter/casestudy}
+
+%Chapter 3: CS' Analysis
+\subfile{chapter/analisi}
+
+%Chapter 4: Orchestration of WF
+\subfile{chapter/framework}
+
+\printglossaries
+
+\end{document}
