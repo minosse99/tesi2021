@@ -6,15 +6,17 @@
 
 \newglossaryentry{Throughput}{
 	name=Throughput,
-	description=Machine laerning
+	description=Quantitá di dati trasmessi in un unitá di tempo \textit{(Tasso di elaborazione o trasmissione)}
 }
 
 \newglossaryentry{CDN}{
 	name=CDN,
-	description=Content Delivery Network
+	description={(\textit{Content Delivery Network}) Sistema di computer collegati in rete attraverso Internet, che collaborano in maniera trasparente sotto forma di sistema distribuito per ripartire contenuti e servizi agli utenti finali, riducendo anomalie dovute all'eccessivo numero di richieste al server principale}
 }
 
 \subsection{Panoramica}
+
+
 Il Machine learning è un sottoinsieme delle AI, si sta sviluppando in ogni campo, nelle pagine seguenti andremo a studiare le opportunità usando il Machine Learning applicato alle reti.\\
 L'Apprendimento automatico permette ai sistemi di imparare automaticamente e prendere decisioni o predizioni basati sull’esperienza.
 Con lo sviluppo di internet, ricercatori e operatori di rete possono affrontare vari tipi di rete e applicazioni, le quali possono cambiare a seconda delle performance e dei requisiti.\\
@@ -31,8 +33,8 @@ Infine, ogni scenario di rete ha diverse caratteristiche e i ricercatori spesso 
 \caption{ML Networking Workflow} 
 \end{figure}
 
-\newglossaryentry{over-fitting}{name={over-fitting},description={}}
-\newglossaryentry{under-fitting}{name={under-fitting},description={}}
+\newglossaryentry{over-fitting}{name={over-fitting},description={In presenza di un numero eccessivo di parametri rispetto al numero di osservazioni, un modello statistico si adatta ai dati osservati. Nei casi in cui l'apprendimento é stato effettuato troppo a lungo o dove c'era uno scarso numero di esempi di allenamento, il modello potrebbe adattarsi a caratteristiche che sono specifiche solo del \textit{training set} ma che non hanno riscontro nel resto dei casi.}}
+\newglossaryentry{under-fitting}{name={under-fitting},description={Scenario che si presenta quando in un modello statisco o nell'algoritmo di ML non si riesce a catturare adeguatamente la struttura sottostante i dati. Si verifica quando il modello o l'algoritmo non si adattano abbastanza ai dati.La classificazione soffre di un'eccessiva discrepanza.(Il modello é troppo semplice)}}
 
 \textit{Formulazione del problema}: Il processo di allenamento di ML spesso implica alti costi di tempo, è importante, dunque, formulare e astrarre correttamente il problema al primo step.\\
 In questa fase ci si occupa di dividere il problema in una delle Categorie ML: Classificazione, Raggruppamento o Decisionali.
@@ -62,9 +64,9 @@ Parlando di apprendimento automatico possiamo già separare i case study in 3 ca
 \caption{} 
 \end{figure}
 \\
-\newglossaryentry{port-based}{name={port-based},description={}}
-\newglossaryentry{payload-based}{name={payload-based},description={}}
-\newglossaryentry{Deep Learning}{name={Deep Learning},description={}}
+\newglossaryentry{port-based}{name={port-based},description={tecnica di classificazione basata sull'associazione $porta/protocollo$}}
+\newglossaryentry{payload-based}{name={payload-based},description={tecnica di classificazione basata sul contenuto del pacchetto, associazione $contenuto/protocollo$}}
+\newglossaryentry{Deep Learning}{name={Deep Learning},description={il Deep Learning é un campo di ricerca del ML che si basa su diversi livelli di rappresentazione.Intendiamo un insieme di reti neurali artificiali organizzate in diversi strati, dove ogni strato calcola i valori per quello successivo affinche l'informazione venga elaborata in maniera sempre piú completa.}}
 
 La predizione del traffico e la classificazione sono i due campi più richiesti nel campo del MLN.
 La \textit{Predizione del traffico} è un importante problema decisionale, la stima più accurata del volume del traffico è un beneficio del controllo della congestione, allocazione delle risorse, dei percorsi di Routing e anche ad alto livello dei livelli di applicazione.\\
@@ -147,7 +149,7 @@ Gli algoritmi di apprendimento supervisionati sono adatti per analizzare i dati 
 \textit{Self-Organizing Map}\\
 \\
 
-\newglossaryentry{Markov}{name={Catena di Markov},description={}}
+\newglossaryentry{Markov}{name={Catena di Markov},description={Una catena di markov(finita) é un sistema dotato di un numero finito di stati $\{ 1,2, .. ,n \}$ in cui la probabilità che il sistema passi dallo stato $i$ allo stato $j$ al tempo $k - 1$ é $p_{ij}(k)$}}
 
 SOM è un un algoritmo non supervisionato basato sulle rete neurali; produce una proiezioni di dati non lineare e ordinata da un input preso in spazio multidimensionale.\\
 Il SOM è costituito da una rete di neuroni artificiali i cui pesi sono continuamente adattati ai vettori presentati in ingresso nel relativo insieme di addestramento.\\

@@ -21,11 +21,13 @@ Questi campi che stiamo analizzando sono un sottoinsieme di MLOps: un insieme di
   ZenML è uno strumento open-source per operazione di ML.
   Lo strumento si focalizza sui problemi di riproduzioni basati sulla produzione, come le difficoltà di versioning e modelli, organizzazione di workflow di ML e la distribuzione. Può lavorare a fianco a un altro strumento di orchestrazione dei flussi di lavoro per fornire un semplice percorso per rilasciare il modello ML in produzione.\\
   È possibile verificare con precisione dati, modelli e configurazioni. Ti consente di valutare in maniera semi-automatica il modello, confrontare le pipeline di addestramento e distribuire la preelaborazione nel cloud.
+  
   \begin{figure}[htbp]
     \centering
     \includegraphics[width=.9\textwidth]{zenML.png} 
     \caption{ZenML}
     \end{figure}
+  Come vediamo dalla figura 4.2 ogni metodo implementa uno specifico passaggio del workflow, vincolando i passaggi da eseguire sul modello a discrezione del Framework stesso; se l'addestramento (\textit{add\textunderscore trainer}) appare prima del processamento dei dati (\textit{add\textunderscore preprocessing}), sará compito del framework nel metodo (\textit{run}) organizzare l'ordine delle operazioni da eseguire nel modello.
   
   \subsection{Kedro}
 Kedro é uno strumento open-source di orchestrazione basato su Python, che permette di creare workflow per ML riproducibili, mantenibili e modulari, semplificando i processi e rendendoli più accurati.\\
