@@ -17,6 +17,9 @@ Orchestrare un flusso di lavoro è fondamentale per un’azienda che investe nel
 Questi campi che stiamo analizzando sono un sottoinsieme di MLOps: un insieme di pratiche per la collaborazione e la comunicazione tra data scientist e professionisti delle operazioni. Applicando queste tecniche pratiche aumenta la qualità finale, semplifica il processo di gestione e automatizza l’implementazione di modelli di ML e DL in ambienti di produzione su larga scala(schema sottostante)
 
   \section{Framework}
+  Prima di elencare una lista di tools di gestori di risorse di ML, diventa necessario anticipare una distinzione tra un software in fase di ricerca e un software giá a livello di produzione ovvero giá utilizzato a livello aziendale.\\
+  Un software ancora in fase di ricerca, spesso utilizzato a livello accademico, offre delle funzionalitá magari non ancora rilasciate nel mondo ``Aziendlae'' avendo delle "particolaritá" che altri software magari \textit{"in produzione"} non possiedono.\\
+  Questi ultimi, a loro volta, si differenziano grazie a caratteristiche quali l'affidabilitá.  
   \subsection{ZenML} 
   ZenML è uno strumento open-source per operazione di ML.
   Lo strumento si focalizza sui problemi di riproduzioni basati sulla produzione, come le difficoltà di versioning e modelli, organizzazione di workflow di ML e la distribuzione. Può lavorare a fianco a un altro strumento di orchestrazione dei flussi di lavoro per fornire un semplice percorso per rilasciare il modello ML in produzione.\\
@@ -50,5 +53,25 @@ Poiché ogni entità in Flyte è immutabile, insieme a ogni modifica esplicita a
   \includegraphics[width=.9\textwidth]{Flyte.png} 
   \caption{Flyte Console}
   \end{figure}
+
+  \newglossaryentry{server-less}{name={Server-Less},description={}}
+  \newglossaryentry{Microservizi}{name={Microservizi},description={}}
+  \newglossaryentry{grafo aciclico}{name={Grafo Aciclico},description={}}
+  
+  \subsection{MLRun}
+MLRun è uno strumento open-source di orchestrazione di orchestrazione di workflow/pipeline. Ha integrato un approccio per organizzare pipeline di ML, a partire dallo sviluppo iniziale, costruzione del modello verso tutti processi che portano allo sviluppo in produzione.\\
+Esso integra un vasto reparto di strumenti e plugin per lavorare con caratteristiche e modelli insieme alla distribuzione del flusso di lavoro.\\
+MLRun dispone di un archivio di funzionalità e artefatti per controllare l’inserimento, l’elaborazione e l’archiviazione dei dati su più repository e con tecnologie diverse.\\
+È un elastico servizio ``\Gls{server-less}'' per convertire semplice codice in scalabili e organizzati ``\Gls{Microservizi}''; diventa così più semplice e leggero fare esperimenti, allenare i modelli e testarli, e implementare dei flussi di lavoro della pipeline in tempo reale.\\
+L’interfaccia utente complessiva ha una struttura centralizzata per gestire flussi di lavoro di ML. Le caratteristiche principali includono una rapida implementazione, elastica scalabilità, gestione delle funzionalità e un usabilità flessibile.\\
+
+
+\subsection{Couler}
+Couler ha un’interfaccia unificata per il codice e la gestione dei flussi di lavoro con differenti motori e framework di workflow.\\
+L'unico strumento di orchestrazione del flusso di lavoro per la gestione di altri strumenti di orchestrazione.\\
+Anch’esso è open-source e a differenza di altri motori, che hanno complessi livelli di astrazione, l’interfaccia di Couler rende estremamente semplice la gestione di questi livelli.\\
+Couler ha uno stile di programmazione imperativo per la definizione del workflow integrato però con un supporto per la costruzione automatica di un \Gls{grafo aciclico}.\\
+I Servizi di Couler sono altamente estendibili, supportando altri motori di flussi di lavoro.\\
+Facilita l’addestramento dei modelli di ML, aumentando la modularità e la riusabilità.
 
 \end{document}
