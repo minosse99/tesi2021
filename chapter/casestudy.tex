@@ -84,25 +84,26 @@ Soprattutto assegnamento di parametri arbitrari basati su esperienze o azioni pr
 Il \Gls{Deep Learning} è una soluzione promettente grazie alla sua capacità di caratterizzare le differenze tra input e output senza un coinvolgimento umano.
 
 \subsection{Opportunitá}
-In questa sezione evidenziamo nuove potenziali richieste che possono apparire in discipline di rete grazie allo sviluppo dell’apprendimento automatico.\\
-\\
-\textit{Open Dataset per la comunità di rete}\\
-\\
+In questa sezione evidenziamo nuove potenziali richieste che possono apparire in discipline di rete grazie allo sviluppo dell’apprendimento automatico.
+
+\subsubsection{Open Dataset per la comunità di rete}
+
 Collezionare una grande quantità di dati che contengano sia i profili di rete che le prestazioni è uno dei problemi critici del MLN.\\
 Tuttavia, acquisire abbastanza dati targettizzati è ancora molto costoso per la comunità dell’apprendimento automatico.\\
 Per molte ragioni non è semplice per i ricercatori acquisire abbastanza dati di tracciamento reali, anche se esistono molti dati aperti nel dominio di rete.
 Questa realtà ci porta a sviluppare maggiori dataset aperti come ImageNet.\\
-Con set di dati aperti, i test delle prestazioni sono un risultato inevitabile per fornire una piattaforma standard ai ricercatori per confrontare i loro nuovi algoritmi o architetture con quelli all’avanguardia.\\
-\\
-\textit{Automatici Protocolli di rete e architetture}\\
-\\
+Con set di dati aperti, i test delle prestazioni sono un risultato inevitabile per fornire una piattaforma standard ai ricercatori per confrontare i loro nuovi algoritmi o architetture con quelli all’avanguardia.
+
+\subsubsection{Automatici Protocolli di rete e architetture}
+
 Con una profonda conoscenza delle reti, i ricercatori gradualmente scoprono che le reti esistenti hanno molte limitazioni.\\
 Esiste tuttavia un ampio margine di miglioramento delle performance di rete e alla efficienza ridisegnando i protocolli di rete e la loro architettura. É Abbastanza difficile riprogettare un protocolo o un architettura in maniera automatica, tuttavia grazia alla comunitá del Machine Learning si sono trovate alternative piu semplici in questa direzione, come consentire agli agenti di comunicare con altri per completare un task in maniera cooperativa.\\
 Tuttavia nuovi risultati, mostrano come i modelli di ML hanno l’abilita di generare elementi esistenti nel mondo reale e creare strategie che le persone non sono in grado.Tuttavia questi risultati generati sono tutt’ora lontani dalla generazione del protocollo.\\
-Cé un grande potenziale e la possibilitá di creare nuove componenti di rete fattibili senza il coinvolgimento umano, i quali possono aggiornare la loro conoscenza dei sistemi di rete.\\
-\\
-\textit{Promuovere lo sviluppo del ML}\\
-\\Quando si applica il ML nei campi di rete, a causa di richieste dei sistemi di rete e pratici problemi implementativi, alcune limitazioni ereditarie e alcuni problemi emergenti del ML posson essere inoltrati a una nuova fase di compressione con il beneficio dell’unione di due comunitá di ricerca.
+Cé un grande potenziale e la possibilitá di creare nuove componenti di rete fattibili senza il coinvolgimento umano, i quali possono aggiornare la loro conoscenza dei sistemi di rete.
+
+\subsubsection{Promuovere lo sviluppo del ML}
+
+Quando si applica il ML nei campi di rete, a causa di richieste dei sistemi di rete e pratici problemi implementativi, alcune limitazioni ereditarie e alcuni problemi emergenti del ML posson essere inoltrati a una nuova fase di compressione con il beneficio dell’unione di due comunitá di ricerca.
 Ad esempio uno dei principali problemi da risolvere é proprio la robustezza degli algoritmi di ML.\\ 
 La robustezza degli algoritmi dell’apprendimento automatico è la sfida chiave per le applicazioni nell’ambiente del mondo reale dove gli errori di apprendimento potrebbero portare a costi elevati.\\
 È necessario un modello con un alta abilita di generalizzazione che si adatta all’alta varianza e ad adatto ad un traffico dinamico altrimenti sará necesario aggiornare il modello ad cambiamento del traffico di rete(il che è inaccettabile).\\
@@ -144,10 +145,9 @@ I dati sequenziali si riassumono come la sequenza di dati consiste in un ordinat
 \subsection{Workflow: Learning Algorithms}
 
 Prendiamo in considerazioni 3 algoritmi: Self-Organizing Map, Hidden Markov Model e Decision Tree; sviluppati per apprendere e modellare i dati per rilevare anomalie/minacce interne. L’obiettivo è di valutare sia gli algoritmi di apprendimento supervisionati e non.\\
-Gli algoritmi di apprendimento supervisionati sono adatti per analizzare i dati con basi di veritá mentre gli algoritmi non supervisionati sono efficaci per generare avvertimenti di attivitá anomale.\\
-\\
-\textit{Self-Organizing Map}\\
-\\
+Gli algoritmi di apprendimento supervisionati sono adatti per analizzare i dati con basi di veritá mentre gli algoritmi non supervisionati sono efficaci per generare avvertimenti di attivitá anomale.
+
+\subsubsection{Self-Organizing Map}
 
 \newglossaryentry{Markov}{name={catena di Markov},description={Una catena di markov(finita) é un sistema dotato di un numero finito di stati $\{ 1,2, .. ,n \}$ in cui la probabilità che il sistema passi dallo stato $i$ allo stato $j$ al tempo $k - 1$ é $p_{ij}(k)$}}
 
@@ -159,24 +159,24 @@ Il processo viene ripetuto per ogni vettore dell’insieme di training per un ce
 Vengono valutati 2 tipi di approcci per addestrare il SOM: i dati che rappresentono tutte le classi (minacce interne/esterne) altrimenti solo i dati che rappresentano i normali comportamenti dell’utente.\\
 Il primo approccio è applicabile con delle ``verita di base" per dati provenienti da piú classi sono disponibili, e la veritá[ground-truth] di base vengono usate per etichettare i nodi in fase post-addestramento in base alle migliori unitá corrispondenti(nodi) per i dati in ciascuna classe.\\
 Nel secondo caso quando la base di verita per una classe, tipicamente normale è disponibile per l’addestramento, il secondo approccio puó essere usato per modellare i dati ed in questo caso viene usato un rilevatore di anomalie post addestramento.\\
-Quando non ci sono informazioni sui dati di addestramento, tutti i dati possono essere usati, l’obiettivo del SOM , in questo caso, è la fase di raggruppamento e visualizzazione dei dati per assistere l’analista umano.\\
-\\
-\textit{Hidden Markov Model}\\
-\\ 
+Quando non ci sono informazioni sui dati di addestramento, tutti i dati possono essere usati, l’obiettivo del SOM , in questo caso, è la fase di raggruppamento e visualizzazione dei dati per assistere l’analista umano.
+
+\subsubsection{Hidden Markov Model}
+
 HMM è un modello statistico nei quali gli stati sono nascosti. Ogni stato nascosto espone un simbolo in un insieme con probabilitá prima di passare a un nuovo stato.\\
 Un modello di Markov Nascosto è una \Gls{Markov} dove gli stati non sono direttamente osservabili direttamente: la catena ha un certo numero di stati, gli stati evolvono secondo una Catena di Markov, ogni stato genera un evento con un certa distribuzione di probabilitá che dipende solo dallo stato, l’evento è osservabile lo stato no.\\
 Possiamo usare il HMM usare l’algoritmo di Baum-Welch che data una sequenza dell’uscita o un insieme di tali sequenze, l’obiettivo è di trovare l’insieme piú probabile per il quale si possano dichiarare le probabilitá dell’uscita e di transizione.\\
 Ció avviene addestrando i parametri dell’HMM mediante il gruppo di dati relativi alle sequenze di azioni di ciascun utente in un determinato periodo di tempo, in questo caso: settimanalmente.\\
-Quindi, per ciascuna nuova sequenza di azioni dell'utente, l'HMM dell'utente viene utilizzato per calcolare la probabilità di log della sequenza.La sequenza viene segnalata se il valore di probabilitá di log è superiore a una certa soglia, se la sequenza non viene flaggata oppure viene considerata da un analista “non rilevante” viene usata nella combinazione con le azioni precedenti per addestrare il modello HMM dell’utente.\\
-\\
-\textit{Decision Tree}\\
-\\
+Quindi, per ciascuna nuova sequenza di azioni dell'utente, l'HMM dell'utente viene utilizzato per calcolare la probabilità di log della sequenza.La sequenza viene segnalata se il valore di probabilitá di log è superiore a una certa soglia, se la sequenza non viene flaggata oppure viene considerata da un analista “non rilevante” viene usata nella combinazione con le azioni precedenti per addestrare il modello HMM dell’utente.
+
+\subsubsection{Decision Tree}
+
 Un albero di decisione è un modello predittivo, dove ogni nodo rappresenta uno stato mentre ogni arco una determinata proprietá che porterá ad uno stato differente.\\
 Per generare questo albero delle decisioni viene usato l’algoritmo C4.5, esso si basa sul costruire un decision tree usando il concetto di informazione entropica creando per ogni nodo una regola “if-then-else”.\\
-Per ogni nodo dell’albero, i dati vengono suddivisi in sottoinsiemi; il criterio è soddisfatto piu efficacemente scegliendo la funzione e il punto di divisione che fornisce il massimo guadagno di informazioni normalizzate.\\
-\\
-\textit{C4.5}\\
-\\
+Per ogni nodo dell’albero, i dati vengono suddivisi in sottoinsiemi; il criterio è soddisfatto piu efficacemente scegliendo la funzione e il punto di divisione che fornisce il massimo guadagno di informazioni normalizzate.
+
+\subsubsection{C4.5}
+
 L’algoritmo C4.5 ha l’obiettivo di costruire un  albero decisionale da un insieme di dati di addestramento, usando il concetto di informazione entropica.\\
 Essendo S un insieme di addestramento $$ S = S_1 ,S_2,…,S_n$$  di campioni gia classificati, ogni campione $s_i$ è composto da un vettore p-dimensionale $(x_{(1,i)}  ,x_{(2,i)}, … , x_{(n,i)} )$ , che rappresentano gli attributi del campione nonché le classi di cui esso appartiene.\\
 L’algoritmo sceglie l’attributo che piu efficacemente divide l’insieme in piu sottoinsiemi arricchiti in una classe o in un’altra.\\
