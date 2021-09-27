@@ -16,7 +16,7 @@ Possiamo semplicemente semplificare lo schema visto in precedenza come segue, la
 Gli strumenti per l’orchestrazione ML sono usati per automatizzare e gestire i workflow e le infrastrutture delle pipeline con semplici interfacce, aiutando i data scientists e al team di ML di concentrarsi solo sul necessario.\\
 Orchestrare un flusso di lavoro è fondamentale per un’azienda che investe nel ML, perciò è necessario capire come automatizzare il maggior numero di risorse, tra cui l’estrazione dell’output del modello con dei monitoraggi costanti durante la fase di produzione.\\
 Questi campi che stiamo analizzando sono un sottoinsieme di MLOps: un insieme di pratiche per la collaborazione e la comunicazione tra data scientist e professionisti delle operazioni. Applicando queste tecniche pratiche aumenta la qualità finale, semplificando il processo di gestione e automatizza l’implementazione di modelli di ML e DL in ambienti di produzione su larga scala.(figura 4.1)
-
+\cite{articleNeptune,frameworkArticleNeptune,googleArticle}
 
 \section{\Gls{framework}}
   Prima di elencare una lista di tools di gestori di risorse di ML, diventa necessario anticipare una distinzione tra un software in fase di ricerca e un software giá a livello di produzione ovvero giá pronto per essere utilizzato a livello aziendale.\\
@@ -84,7 +84,7 @@ Questi campi che stiamo analizzando sono un sottoinsieme di MLOps: un insieme di
 Come spesso accade nel campo del \textit{Computer Science} uno stesso problema puó essere risolto attraverso l'utilizzo di diversi strumenti.\\
 I framework che abbiamo selezionato sono open-source (tutti disponibili su \textit{github}) e forniscono tutti una  orchestrazione di flussi di lavoro per l'apprendimento automatico.\\
 Kedro e Flyte sono i piú diffusi, tra cui Flyte, come citato nella sezione precedente, gestisce giá piú di 10 mila flussi di lavoro.
-Ovviamente in base al caso di studio che prenderemo in considerazione si andrá a preferire un \Gls{framework} piuttosto che un'altro, a seconda delle caratteristiche che li differenziano, e che in parte abbiamo visto nella sezione precedente.\\
+Ovviamente in base al caso di studio che prenderemo in considerazione si andrá a preferire un \Gls{framework} piuttosto che un altro, a seconda delle caratteristiche che li differenziano, e che in parte abbiamo visto nella sezione precedente.\\
 Ad esempio nel campo della radiologia, i medici si troverebbero in difficolta ad usare FW quali ZenML come libreria di Python come viceversa puó essere un approccio piú chiaro per sistemisti che lavorano nel campo del Networking, raccogliendo dati in real-time.\\
 \Gls{framework} quali Flyte hanno un interfaccia intuitiva che magari permette anche a utenti che non lavorano costantemente nell'apprendimento automatico di fare predizione attraverso dei modelli.\\
 Sia MLRun e Flyte sono estendibili attraverso diversi plug-in i quali possono diventare fondamentali qualora i dati in entrata sono di tipologie particolari(quali le immagini nel campo della radiologia o il Face2Face Traslation).\\

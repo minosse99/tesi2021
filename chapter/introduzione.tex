@@ -4,10 +4,10 @@
 
 Il Machine Learning sta diventanto molto diffuso nelle realtá aziendali IT e non solo, essenziale per fare previsioni basati su calcoli statistici.\\
 In questo testo andremo ad analizzare due casi di studio sulle modalitá in cui l’appredimento automatico  interagisce con esse.\\
-Metteremo in relazioni i casi di studio trovati con altri due compagni di corso, con l’obiettivo di andare a cercare un modo di trovare un invariante il piú possibile automatizzata che permetta di sfruttare i benefici del ML.\\
+Metteremo in relazioni i casi di studio trovati con altri due compagni di corso, con l’obiettivo di andare a trovare un'invariante il piú possibile automatizzata che permetta di sfruttare i benefici del ML.\\
 Una volta analizzate le differenze e le analogie presenti nei diversi casi di studio, tracceremo una linea di ``workflow complessiva” , evidenziando le fasi di processo comuni, i quali diventeranno essenziali per capire come cercare di automatizzare la gestione dei flussi di lavoro del Machine Learning.\\
 Senza la pretesa di essere completi studieremo e confronteremo un insieme di \Gls{framework}, che permettono di orchestrare diversi flussi di lavoro, che come vedremo saranno simili ai workflow analizzati, in maniera automatica.\\
-Questo approccio Bottom-Up é stato preferito perché per arrivare a studiare ed analizzare degli strumenti di orchestrazione di flusso di ML per andarli poi ad applicare in un ambiente di produzione, diventa necessario comprendere inizialmente come viene usato il ML.
+Questo approccio bottom-up é stato preferito perché per arrivare a studiare ed analizzare degli strumenti di orchestrazione di flusso di ML per andarli poi ad applicare in un ambiente di produzione, diventa necessario comprendere inizialmente come viene usato il ML.
 \newpage
 \section{Intelligenza Artificiale}
 \chapquote{``We spend a great deal of time studying history, which, let’s face it, is mostly the history of stupidity. So it’s a welcome change that people are studying instead the future of intelligence. "}{Stephen Hawking}{}
@@ -25,16 +25,16 @@ Nei primi due casi il sistema intelligente viene paragonato alla capacità di ri
 Mentre gli ultimi due campi svolgono un’azione seguendo un processo razionale.
 
 \section{Apprendimento Automatico}
-L’apprendimento automatico(\textit{Machine Learning,ML}) è un ramo dell’intelligenza artificiale, che raccoglie metodi in grado di migliorare la performance di un algoritmo, autonomamente, nell’identificare pattern di dati.\\
+L’apprendimento automatico(\textit{Machine Learning,ML}) è un ramo dell’intelligenza artificiale, che raccoglie metodi in grado di migliorare la performance di un algoritmo, autonomamente, nell’identificare pattern di dati.\cite{enwiki:1046345973}\\
 L’apprendimento automatico cerca di costruire algoritmi e modelli che possono imparare a prendere decisioni senza dati con regole predefiniti, gli algoritmi di ML esistenti si suddividono in tre categorie:
 \begin{itemize}
   \item \textbf{Supervised Learning}: algoritmi che cercano di condurre una classificazione o regressione su dati targettizzati.
   \item \textbf{Unsupervised Learning}, si focalizzano sulla classificazione di semplici insiemi in gruppi 
   \item \textbf{Reinforcement Learning}, gli agenti imparano la migliore azione da eseguire che ti portino al beneficio superiore
 \end{itemize}
-L'\textit{Apprendimento supervisionato} mira a istruire il sistema in modo da permettergli di elaborare automaticamente previsioni sui valori di uscita rispetto ad un input sulla base di una serie di ``esempi ideali'', costituiti da coppie \textit{\textless input,output\textgreater} \space fornitegli in input.\\
-D'altrocanto l'\textit{apprendimento non supervisionato} invece, riceverá un insieme di input(\textit{Esperienza}) che in automatico verranno riclassificati sulla base di caratteristiche comuni, per cercare di eseguire ragionamenti e previsioni sugli input successivi.\\
-L'\textit{apprendimento per rinforzo} mira a realizzare agenti autonomi in grado di scegliere azioni da compiere per il conseguimento di determinati obiettivi, tenendo in considerazione l'ambiente di cui fanno parte.A differenze dei precedenti paradigmi si occupa di problemi decisionali sequenziali, in cui l'azione é fortemente condizionata dallo stato attuale del sistema che ne determina quello futuro.
+L'\textit{Apprendimento supervisionato} mira a istruire il sistema in modo da permettergli di elaborare automaticamente previsioni sui valori di uscita rispetto ad un input sulla base di una serie di ``esempi ideali'', costituiti da coppie \textit{\textless input,output\textgreater} \space fornitegli in input.\cite{enwiki:1033187514}\\
+D'altrocanto l'\textit{apprendimento non supervisionato} invece, riceverá un insieme di input(\textit{Esperienza}) che in automatico verranno riclassificati sulla base di caratteristiche comuni, per cercare di eseguire ragionamenti e previsioni sugli input successivi.\cite{enwiki:1033187514}\\
+L'\textit{apprendimento per rinforzo} mira a realizzare agenti autonomi in grado di scegliere azioni da compiere per il conseguimento di determinati obiettivi, tenendo in considerazione l'ambiente di cui fanno parte.A differenze dei precedenti paradigmi si occupa di problemi decisionali sequenziali, in cui l'azione é fortemente condizionata dallo stato attuale del sistema che ne determina quello futuro.\cite{enwiki:1046562875}
 
 \begin{figure}[htbp]
   \centering
