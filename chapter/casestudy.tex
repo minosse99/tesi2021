@@ -110,7 +110,7 @@ La robustezza degli algoritmi dell’apprendimento automatico è la sfida chiave
 Sebbene alcuni esperimenti sono stati condotti sotto specifici ambienti di rete possono, fornire buoni risultati in altri ambienti,non è scontato poiché la maggior parte degli algoritmi di apprendimento automatico presuppone che i dati seguano la stessa distribuzione, il che non è pratico negli ambienti di rete.
 \cite{wang2017machine,ridwan2021applications}
 \newpage
-\section{Cybersecurity: Intrusion Detection}
+\section{Apprendimento automatico nella Sicurezza Informatica}
 \subsection{Introduzione}
 La sicurezza informatica sta diventando il rischio chiave per qualsiasi azienda poiche il numero di attacchi sta crescendo e i nostri dati diventano sempre piu vulnerabili.\\
 L’intelligenza Artificale e il Machine Learning possono aiutare a rilevare minacce e fornire consigli agli analisti per sapere difendersi di conseguenza.\\
@@ -120,8 +120,12 @@ Nuovi attacchi e malware sofisticati sono stati in grado di aggirare il livello 
 Le applicazioni di ML possono processare e analizzare grandi volumi di dati sperimentali in nuovi modi, gli algoritmi di ML possono fornire una visione unica dei “big data” e elaborarli per ottenere un risultato ottimale.\\
 Le reti e le piattaforme sono costantemente sotto attacco, questi attacchi sono molto efficienti dati il numero di strumento che permettono di scannerizzare e valutare i target.\\
 Gli avversari stanno gia usando il ML per rendere maggiormente evoluti i loro attacchi.
-\cite{fraley2017promise,bresniker2019grand,MLSecurity}
-\subsection{Workflow: Data Preprocessing}
+\cite{fraley2017promise,bresniker2019grand,MLSecurity}\\
+In questa sezione non andremo ad analizzare tutti i rischi della sicurezza informatica, perché sarebbe troppo dispendioso e non finalizzato verso gli obiettivi che ci eravamo prefissati.
+Bensí andremo ad analizzare un campo specifico, che dovrebbe permettere un confronto con il \textit{case study} precedente ovvero l'\textit{Insider Threat Detection}(Individuazione delle minacce interne).\\
+Andiamo di seguito ad analizzare le fasi principali del flusso di lavoro in questo campo,raggrupando piú genericamente in 2 macrocategorie (preprocessamento dei dati e algoritmi di apprendimento) che analizziamo qui di seguito
+
+\subsection{Pre Processamento dei dati}
 Il primo passo è raccogliere i dati e iniziare una prima elaborazione dei dati,come vediamo dalla figura 2.2 possiamo raggruppare questi dati in 2 categorie: 
 \begin{itemize}
 \item Azioni degli Utenti
@@ -142,7 +146,7 @@ I dati sequenziali si riassumono come la sequenza di dati consiste in un ordinat
 \caption{Workflow Intrusion Threat} 
 \end{figure}
 \newpage
-\subsection{Workflow: Learning Algorithms}
+\subsection{Algoritmi di apprendimento}
 
 Prendiamo in considerazioni 3 algoritmi: Self-Organizing Map, Hidden Markov Model e Decision Tree; sviluppati per apprendere e modellare i dati per rilevare anomalie/minacce interne. L’obiettivo è di valutare sia gli algoritmi di apprendimento supervisionati e non.\\
 Gli algoritmi di apprendimento supervisionati sono adatti per analizzare i dati con basi di veritá mentre gli algoritmi non supervisionati sono efficaci per generare avvertimenti di attivitá anomale.
