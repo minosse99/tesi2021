@@ -74,11 +74,12 @@ Ci sono due principali direzioni di ricerca: analisi delle serie temporali e tom
 Tuttavia, è molto costoso misurare il volume del traffico direttamente, soprattutto a larga scala in una grande velocita di rete.\\
 \\
 La \textit{classificazione del traffico} trova corrispondenza con le applicazioni di rete e i protocolli con i rispettivi flussi di traffico.\\
-Il tradizionale metodo di classificazione del traffico è \Gls{port-based} e \Gls{payload-based}. Il metodo port-base si considera inefficiente a causa del continuo cambiamento e riuso delle porte, mentre il payload-based soffre di problemi di privacy dovuti alle analisi del contenuto dei pacchetti che risulta fallimentare in caso di traffico criptato.
+I tradizionali metodi di classificazione del traffico sono  \Gls{port-based} e \Gls{payload-based}. Il metodo port-base si considera inefficiente a causa del continuo cambiamento e riuso delle porte, mentre il payload-based soffre di problemi di privacy dovuti alle analisi del contenuto dei pacchetti che risulta fallimentare in caso di traffico criptato.
 Gli approcci di ML sono basati su funzioni statistiche, studiati negli anni recenti specialmente nel campo della sicurezza del dominio di rete.\\
-Non è semplice considerare ML come una soluzione onnipotente e rilasciarla nel mondo reale, generalmente questi studi variano a seconda dello scenario da tutte le classificazioni verso più situazioni reali con traffico sconosciuto. Questa tabella di ricerca è molto simile alle tecnologie che evolvono dal Supervised learning verso Unsupervised e semisupervised learning , il quale hanno permesso di importare l’apprendimento automatico nei campi di rete.\\
+Non è semplice considerare ML come una soluzione onnipotente e rilasciarla nel mondo reale, generalmente questi studi variano a seconda dello scenario da tutte le classificazioni verso più situazioni reali con traffico sconosciuto. Questa tabella riassuntiva(Figura 2.2) mette in relazione tecnologie che evolvono dal Supervised learning verso Unsupervised e semisupervised learning , il quale hanno permesso di importare l’apprendimento automatico nei campi di rete.\\
 \\
-Un \textit{Efficiente gestione delle risorse} e un ottimale \textit{adattamento di rete} sono le chiavi per aumentare le performance dei sistemi di rete.\\ Alcuni esempi di problemi sono la pianificazione del traffico, Routing e controllo delle congestioni TCP. Tutti questi problemi possono essere formulati tramite problemi di decisione.\\
+Un \textit{Efficiente gestione delle risorse} e un ottimale \textit{adattamento di rete} sono le chiavi per aumentare le performance dei sistemi di rete.\\
+Alcuni esempi di problemi sono la pianificazione del traffico, Routing e controllo delle congestioni TCP. Tutti questi problemi possono essere formulati tramite problemi di decisione.\\
 È difficile risolvere questi problemi con sistemi di regole basate su algoritmi euristici a causa delle complessità dei diversi sistemi, degli input (rumorosi) e delle difficolta nell’ottimizzazione delle prestazioni in coda.\\
 Soprattutto assegnamento di parametri arbitrari basati su esperienze o azioni prese in seguito a predeterminate regole, spesso si traduce in algoritmo di pianificazione che è compreso dalle persone ma tutt’altro che ottimale.\\
 Il \Gls{Deep Learning} è una soluzione promettente grazie alla sua capacità di caratterizzare le differenze tra input e output senza un coinvolgimento umano.
@@ -98,48 +99,50 @@ Con set di dati aperti, i test delle prestazioni sono un risultato inevitabile p
 
 Con una profonda conoscenza delle reti, i ricercatori gradualmente scoprono che le reti esistenti hanno molte limitazioni.\\
 Esiste tuttavia un ampio margine di miglioramento delle performance di rete e alla efficienza ridisegnando i protocolli di rete e la loro architettura. É Abbastanza difficile riprogettare un protocolo o un architettura in maniera automatica, tuttavia grazia alla comunitá del Machine Learning si sono trovate alternative piu semplici in questa direzione, come consentire agli agenti di comunicare con altri per completare un task in maniera cooperativa.\\
-Tuttavia nuovi risultati, mostrano come i modelli di ML hanno l’abilita di generare elementi esistenti nel mondo reale e creare strategie che le persone non sono in grado.Tuttavia questi risultati generati sono tutt’ora lontani dalla generazione del protocollo.\\
-Cé un grande potenziale e la possibilitá di creare nuove componenti di rete fattibili senza il coinvolgimento umano, i quali possono aggiornare la loro conoscenza dei sistemi di rete.
+In ogni modo nuovi risultati mostrano come i modelli di ML hanno l’abilita di generare elementi esistenti nel mondo reale e creare strategie che le persone non sono in grado di predire.\\
+Tuttavia questi risultati generati sono tutt’ora lontani dalla generazione di un nuovo protocollo di rete.\\
+Cé un grande potenziale e la possibilitá di creare nuovi componenti di rete senza il coinvolgimento umano, i quali possono aggiornare la loro conoscenza in base al sistema di rete.
 
 \subsubsection{Promuovere lo sviluppo del ML}
 
-Quando si applica il ML nei campi di rete, a causa di richieste dei sistemi di rete e pratici problemi implementativi, alcune limitazioni ereditarie e alcuni problemi emergenti del ML posson essere inoltrati a una nuova fase di compressione con il beneficio dell’unione di due comunitá di ricerca.
+Quando si applica il ML nei campi di rete, a causa di richieste dei sistemi di rete e pratici problemi implementativi, alcune limitazioni ereditarie e alcuni problemi emergenti del ML possono essere inoltrati a una nuova fase di compressione con il beneficio dell’unione di due comunitá di ricerca.
 Ad esempio uno dei principali problemi da risolvere é proprio la robustezza degli algoritmi di ML.\\ 
 La robustezza degli algoritmi dell’apprendimento automatico è la sfida chiave per le applicazioni nell’ambiente del mondo reale dove gli errori di apprendimento potrebbero portare a costi elevati.\\
-È necessario un modello con un alta abilita di generalizzazione che si adatta all’alta varianza e ad adatto ad un traffico dinamico altrimenti sará necesario aggiornare il modello ad cambiamento del traffico di rete(il che è inaccettabile).\\
-Sebbene alcuni esperimenti sono stati condotti sotto specifici ambienti di rete possono, fornire buoni risultati in altri ambienti,non è scontato poiché la maggior parte degli algoritmi di apprendimento automatico presuppone che i dati seguano la stessa distribuzione, il che non è pratico negli ambienti di rete.
+È necessario un modello con un alta abilitá di generalizzazione che si adatta all’alta varianza e ad adattamento del traffico dinamico altrimenti sará necesario aggiornare il modello verso i cambiamenti del traffico di rete(il che è inaccettabile).\\
+Sebbene alcuni esperimenti sono stati condotti sotto specifici ambienti di rete, possono fornire buoni risultati in altri ambienti,non è scontato poiché la maggior parte degli algoritmi di apprendimento automatico presuppone che i dati seguano la stessa distribuzione, il che non è pratico negli ambienti di rete.
 \cite{wang2017machine,ridwan2021applications}
 \newpage
 \section{Apprendimento automatico nella Sicurezza Informatica}
 \subsection{Introduzione}
-La sicurezza informatica sta diventando il rischio chiave per qualsiasi azienda poiche il numero di attacchi sta crescendo e i nostri dati diventano sempre piu vulnerabili.\\
-L’intelligenza Artificale e il Machine Learning possono aiutare a rilevare minacce e fornire consigli agli analisti per sapere difendersi di conseguenza.\\
-ML puo essere usato per identificare target avanzati, le vulnerabilitá dell’infrastruttura ed eventuali exploit.\\
+La sicurezza informatica sta diventando il rischio chiave per qualsiasi azienda poiché il numero di attacchi sta crescendo e i nostri dati diventano sempre piu vulnerabili.\\
+L’Intelligenza Artificale e il Machine Learning possono aiutare a rilevare minacce e fornire consigli agli analisti per sapere difendersi di conseguenza.\\
+ML puó essere usato per identificare target avanzati, le vulnerabilitá dell’infrastruttura ed eventuali exploit.\\
 Il numero di minacce è in aumento e rischia di compromettere la nostra privacy e la nostra professionalitá quotidianamente, l’evolversi di questo campo rischia di lasciare indietro gli analisti che non riescono a tracciare i nuovi malware e i nuovi attacchi.\\
 Nuovi attacchi e malware sofisticati sono stati in grado di aggirare il livello di sicurezza della rete e degli endpoint per fornire attacchi informatici a velocità allarmanti.\\
-Le applicazioni di ML possono processare e analizzare grandi volumi di dati sperimentali in nuovi modi, gli algoritmi di ML possono fornire una visione unica dei “big data” e elaborarli per ottenere un risultato ottimale.\\
-Le reti e le piattaforme sono costantemente sotto attacco, questi attacchi sono molto efficienti dati il numero di strumento che permettono di scannerizzare e valutare i target.\\
+Le applicazioni di ML possono processare e analizzare grandi volumi di dati sperimentali in nuovi modi, gli algoritmi di ML possono fornire una visione unica dei “big data” ed elaborarli per ottenere un risultato ottimale.\\
+Le reti e le piattaforme sono costantemente sotto attacco, questi attacchi sono molto efficienti dati il numero di strumenti che permettono di scannerizzare e valutare i target.\\
 Gli avversari stanno gia usando il ML per rendere maggiormente evoluti i loro attacchi.
 \cite{fraley2017promise,bresniker2019grand,MLSecurity}\\
 In questa sezione non andremo ad analizzare tutti i rischi della sicurezza informatica, perché sarebbe troppo dispendioso e non finalizzato verso gli obiettivi che ci eravamo prefissati.
 Bensí andremo ad analizzare un campo specifico, che dovrebbe permettere un confronto con il \textit{case study} precedente ovvero l'\textit{Insider Threat Detection}(Individuazione delle minacce interne).\\
-Andiamo di seguito ad analizzare le fasi principali del flusso di lavoro in questo campo,raggrupando piú genericamente in 2 macrocategorie (preprocessamento dei dati e algoritmi di apprendimento) che analizziamo qui di seguito
+Andiamo di seguito ad analizzare le fasi principali del flusso di lavoro in questo campo, raggrupandole piú genericamente in 2 macrocategorie (preprocessamento dei dati e algoritmi di apprendimento) che analizziamo qui di seguito
 
 \subsection{Pre Processamento dei dati}
-Il primo passo è raccogliere i dati e iniziare una prima elaborazione dei dati,come vediamo dalla figura 2.2 possiamo raggruppare questi dati in 2 categorie: 
+Il primo passo è raccogliere i dati e iniziare una prima elaborazione degli stessi, come vediamo dalla figura 2.2 possiamo raggruppare questi dati in 2 categorie: 
 \begin{itemize}
 \item Azioni degli Utenti
-\item  Informazioni di Utenti e Struttura
+\item Informazioni di Utenti e Struttura
 \end{itemize}
- Le azioni degli utenti, raccolti da diversi sistemi di log e altri sistemi di registrazione che devono essere raccolti in maniera costante per rendere utili i sistemi di analisi, mentre le informazioni degli utenti e dell’organizzazione della struttura, rappresentano invece dati statici, quali possono essere informazioni personali degli utenti, regole dell’organizzazione, ecc.\\
+ Le azioni degli utenti, raccolti da diversi sistemi di log e altri sistemi di registrazione, devono essere raccolti in maniera costante per rendere utili i sistemi di analisi.\\
+ Mentre le informazioni degli utenti e dell’organizzazione della struttura, rappresentano invece dati statici, quali possono essere informazioni personali degli utenti, regole dell’organizzazione, ecc.\\
 I dati di entrambe le categorie possono essere analizzati periodicamente, di solito giornalmente o settimanalmente, a seconda della configurazione dell’organizzazione, la quantitá di dati e soprattutto i tempi requisiti per i sistemi di rilevamento.\\
-L’analisi dei dati ha bisogno di incrociare correttamente per ogni utente o per ogni dispositivo, basati su un insieme di proprietá, come ID utente, ID host, ID azione e tempo.\\
+L’analisi dei dati ha bisogno di incrociare correttamente le informazioni per ogni utente o per ogni dispositivo, basati su un insieme di proprietá come ID utente, ID host, ID azione e tempo.\\
 Una volta raccolti i dati dalle varie sorgenti, le caratteristiche vengono estratte da addestramenti e valutazioni di algoritmi di apprendimento automatico.
-Possiamo distinguere i dati in dati sequenziali e dati numerici. I dati numerici dove per ogni istanza è rappresentata da un vettore di lunghezza fissato, i quali sono piu comunemente applicabili al ML; mentre i dati sequenziali avedo una struttura intrisenca possono rilevare fenomeni maggiormente interessanti considerando l’azione di ciascun utente.\\
-I dati numerici sono esportati per rappresentare le caratteristiche degli utenti e le attivitá durante un determinato periodo, parliamo di caratteristiche degli utenti e caratteristiche delle attivitá.
+Possiamo distinguere i dati in dati sequenziali e dati numerici. I dati numerici vengono rappresentati per ogni istanza con un vettore di lunghezza fissato, i quali sono piu comunemente applicabili al ML; mentre i dati sequenziali avedo una struttura intrisenca possono rilevare fenomeni maggiormente interessanti considerando l’azione di ciascun utente.\\
+I dati numerici vengono esportati per rappresentare le caratteristiche degli utenti e le attivitá durante un determinato periodo, parliamo di caratteristiche degli utenti e caratteristiche delle attivitá.
 Le caratteristiche degli utenti includono ogni ruolo dell’utente, unitá funzionale, dipartimento ecc…\\
 Le caratteristiche delle attivitá invece sono per lo piú estratte contando il numero di attivitá in ogni categoria(log on/off , dispositivo connesso/disconnesso, file, email) in un determinato periodo di tempo.\\
-I dati sequenziali si riassumono come la sequenza di dati consiste in un ordinato elenco delle azioni intraprese da un utente raccolte di solito quotidianamente o settimanalmente.\\
+I dati sequenziali si riassumono come la sequenza di dati;  consiste in un ordinato elenco delle azioni intraprese da un utente raccolte di solito quotidianamente o settimanalmente.\\
 \begin{figure}[htbp]
 \center
 \includegraphics[height=90mm]{workflowIntrusionThreat.png}
@@ -148,7 +151,8 @@ I dati sequenziali si riassumono come la sequenza di dati consiste in un ordinat
 \newpage
 \subsection{Algoritmi di apprendimento}
 
-Prendiamo in considerazioni 3 algoritmi: Self-Organizing Map, Hidden Markov Model e Decision Tree; sviluppati per apprendere e modellare i dati per rilevare anomalie/minacce interne. L’obiettivo è di valutare sia gli algoritmi di apprendimento supervisionati e non.\\
+Prendiamo in considerazioni 3 algoritmi: Self-Organizing Map, Hidden Markov Model e Decision Tree; sviluppati per apprendere e modellare i dati per rilevare anomalie/minacce interne.\\
+L’obiettivo è di valutare sia gli algoritmi di apprendimento supervisionati e non.\\
 Gli algoritmi di apprendimento supervisionati sono adatti per analizzare i dati con basi di veritá mentre gli algoritmi non supervisionati sono efficaci per generare avvertimenti di attivitá anomale.
 
 \subsubsection{Self-Organizing Map}
@@ -158,7 +162,7 @@ Gli algoritmi di apprendimento supervisionati sono adatti per analizzare i dati 
 SOM è un un algoritmo non supervisionato basato sulle rete neurali; produce una proiezioni di dati non lineare e ordinata da un input preso in spazio multidimensionale.\\
 Il SOM è costituito da una rete di neuroni artificiali i cui pesi sono continuamente adattati ai vettori presentati in ingresso nel relativo insieme di addestramento.\\
 La rete neurale descritta come un insieme di neuroni artificali, ciascuno con un precisa collocazione e adiacenti gli uni dagli altri sulla mappa rappresentativa degli output, seguendo un processo dove il nodo avente un vettore di pesi piú vicino a quello dell’input si aggiudica i restanti, mentre i restanti son aggiornati in modo da avvicinarli al vettore in ingresso.\\
-Quando un nodo vince una competizione, i pesi dei nodi adiacenti dove la piú un modo è lontano dal cosidetto “vincitore” meno deve essere evidente la sua variazione dei pesi.\\
+Quando un nodo vince una competizione, i pesi dei nodi adiacenti dove piú un nodo è lontano dal cosidetto “vincitore” meno deve essere evidente la sua variazione dei pesi.\\
 Il processo viene ripetuto per ogni vettore dell’insieme di training per un certo numero di cicli, la mappa cosi riesce ad associare i nodi d’uscita con gruppi e/o schemi ricorrenti nell’insieme di dati in ingresso.\\
 Vengono valutati 2 tipi di approcci per addestrare il SOM: i dati che rappresentono tutte le classi (minacce interne/esterne) altrimenti solo i dati che rappresentano i normali comportamenti dell’utente.\\
 Il primo approccio è applicabile con delle ``verita di base" per dati provenienti da piú classi sono disponibili, e la veritá[ground-truth] di base vengono usate per etichettare i nodi in fase post-addestramento in base alle migliori unitá corrispondenti(nodi) per i dati in ciascuna classe.\\
@@ -169,19 +173,20 @@ Quando non ci sono informazioni sui dati di addestramento, tutti i dati possono 
 
 HMM è un modello statistico nei quali gli stati sono nascosti. Ogni stato nascosto espone un simbolo in un insieme con probabilitá prima di passare a un nuovo stato.\\
 Un modello di Markov Nascosto è una \Gls{Markov} dove gli stati non sono direttamente osservabili direttamente: la catena ha un certo numero di stati, gli stati evolvono secondo una Catena di Markov, ogni stato genera un evento con un certa distribuzione di probabilitá che dipende solo dallo stato, l’evento è osservabile lo stato no.\\
-Possiamo usare il HMM usare l’algoritmo di Baum-Welch che data una sequenza dell’uscita o un insieme di tali sequenze, l’obiettivo è di trovare l’insieme piú probabile per il quale si possano dichiarare le probabilitá dell’uscita e di transizione.\\
+Possiamo usare il HMM con l’algoritmo di Baum-Welch che data una sequenza dell’uscita o un insieme di tali sequenze, l’obiettivo è di trovare l’insieme piú probabile per il quale si possano dichiarare le probabilitá dell’uscita e di transizione.\\
 Ció avviene addestrando i parametri dell’HMM mediante il gruppo di dati relativi alle sequenze di azioni di ciascun utente in un determinato periodo di tempo, in questo caso: settimanalmente.\\
-Quindi, per ciascuna nuova sequenza di azioni dell'utente, l'HMM dell'utente viene utilizzato per calcolare la probabilità di log della sequenza.La sequenza viene segnalata se il valore di probabilitá di log è superiore a una certa soglia, se la sequenza non viene flaggata oppure viene considerata da un analista “non rilevante” viene usata nella combinazione con le azioni precedenti per addestrare il modello HMM dell’utente.
+Quindi, per ciascuna nuova sequenza di azioni dell'utente, l'HMM dell'utente viene utilizzato per calcolare la probabilità di log della sequenza.\\
+La sequenza viene segnalata se il valore di probabilitá di log è superiore a una certa soglia, se la sequenza non viene flaggata oppure viene considerata da un analista “non rilevante`` viene usata nella combinazione con le azioni precedenti per addestrare il modello HMM dell’utente.
 
 \subsubsection{Decision Tree}
 
 Un albero di decisione è un modello predittivo, dove ogni nodo rappresenta uno stato mentre ogni arco una determinata proprietá che porterá ad uno stato differente.\\
-Per generare questo albero delle decisioni viene usato l’algoritmo C4.5, esso si basa sul costruire un decision tree usando il concetto di informazione entropica creando per ogni nodo una regola “if-then-else”.\\
+Per generare questo albero delle decisioni viene usato l’algoritmo \textit{C4.5}, esso si basa sul costruire un decision tree usando il concetto di informazione entropica creando per ogni nodo una regola “if-then-else”.\\
 Per ogni nodo dell’albero, i dati vengono suddivisi in sottoinsiemi; il criterio è soddisfatto piu efficacemente scegliendo la funzione e il punto di divisione che fornisce il massimo guadagno di informazioni normalizzate.
 
 \subsubsection{C4.5}
-
-L’algoritmo C4.5 ha l’obiettivo di costruire un  albero decisionale da un insieme di dati di addestramento, usando il concetto di informazione entropica.\\
+\newglossaryentry{informazione entropica}{name={informazione entropica},description={l'entropia di una sorgente di un messaggio é l'informazione media contenuta in ogni messaggio emesso. Ovvero l'informazione contenuta in un messaggio é tanto piu grande quanto meno probabile era. Un messaggio scontato, che ha un'alta probabilità di essere emesso dalla sorgente contiene poca informazione a confronto di un messaggio inaspettato che contiene maggiori informazioni. \cite{itwiki:120890494}}}
+L’algoritmo C4.5 ha l’obiettivo di costruire un  albero decisionale da un insieme di dati di addestramento, usando il concetto di \Gls{informazione entropica}.\\
 Essendo S un insieme di addestramento $$ S = S_1 ,S_2,…,S_n$$  di campioni gia classificati, ogni campione $s_i$ è composto da un vettore p-dimensionale $(x_{(1,i)}  ,x_{(2,i)}, … , x_{(n,i)} )$ , che rappresentano gli attributi del campione nonché le classi di cui esso appartiene.\\
 L’algoritmo sceglie l’attributo che piu efficacemente divide l’insieme in piu sottoinsiemi arricchiti in una classe o in un’altra.\\
 Il criterio di divisione è basato sul concetto di informazione entropica, ottenere il massimo guadagno di informazione normalizzato; l’attributo con un alto guadagno di informazioni normalizzate è scelto per creare la divisione. C4.5 è ricorsivo sulle sottoliste partizionate.

@@ -20,7 +20,8 @@ In tutti i casi di studio analizzati, anche se molto diversi tra loro abbiamo tr
 La raccolta dati è fondamentale in ogni processo di apprendimento automatico; spesso si diversifica quando viene effettuata la prima elaborazione.\\
 Nonostante siano in essere molto diversi i dati tra loro, la loro raccolta può trovare dei punti d’accordo.\\
 Spesso questi dati vengono suddivisi a seconda della metodologia di raccolta: il caso di studio dei recomandation system, che diversifica la raccolta dati come dati espliciti(input degli utenti) e impliciti(informazioni raccolte da flussi di dati), mentre nel campo dell’Intrusion Detection differenzia tra dati statici(tra cui l’informazione dell’organizzazione e dei dipendenti) e dinamici(quali gli input dei dipendenti stessi).\\
-Nel campo della previsione abbiamo una valutazione dei dati in merito a diversi parametri quali: consistenza, precisione, rilevanza ecc. Questi dati, però sono ideali di conseguenza verranno puliti e analizzati per lacune e anomalie, verificati per pertinenza e ripristinati.\\
+Nel campo della previsione abbiamo una valutazione dei dati in merito a diversi parametri quali: consistenza, precisione, rilevanza ecc. \\
+Questi dati, però sono ideali di conseguenza verranno puliti e analizzati per lacune e anomalie, verificati per pertinenza e ripristinati.\\
 Nel campo del Networking invece i dati vengono raccolti in due fasi:
 \begin{itemize}
   \item \textit{Offline}: dati importanti per la costruzione e l’addestramento del modello 
@@ -32,7 +33,7 @@ In questa fase intendiamo anche la ricerca oppure la costruzione del modello per
 Come abbiamo visto nel campo dell’Intrusion Detection per costruire o comunque elaborare un modello diventa fondamentale il tipo di problema che vogliamo andare a risolvere:
 se vogliamo aspettare che vengano generati degli avvertimenti per attività anomale useremo un modello costruito grazie ad un algoritmo non supervisionato, mentre ad esempio nel campo del Networking la classificazione del traffico diventa un problema, il quale una classificazione efficiente viene formulata da un algoritmo supervisionato.\\
 Al contrario la maggior parte delle immagini mediche senza annotazioni potrebbero non essere utili per una varietà di scenari di Supervised learning diventa necessario in questo campo degli algoritmi di Reinforcement Learning.\\
-Mentre una volta ottenuta un insieme di immagini mediche contenenti annotazioni, quindi targettizzati inizia a diventare possibile utilizzare sia algoritmi Supervised Learning per classificare e raggruppare radiografie simili, sia algoritmi non supervisionati che ad esempio, grazie ad un vettore di caratteristiche ciascuno associato a un caso, il vettore di caratteristiche della nuova immagine può essere confrontato con quelli esistenti utilizzando operatori vettoriali.\\
+Mentre una volta ottenuta un insieme di immagini mediche contenenti annotazioni, quindi targettizzati, inizia a diventare possibile utilizzare sia algoritmi Supervised Learning, per classificare e raggruppare radiografie simili, sia algoritmi non supervisionati che ad esempio, grazie ad un vettore di caratteristiche ciascuno associato a un caso, il vettore di caratteristiche della nuova immagine può essere confrontato con quelli esistenti utilizzando operatori vettoriali.\\
 Nel campo della previsione, la scelta dei modelli di ML dipende da diversi fattori, tra cui l’obiettivo aziendale e le caratteristiche dei dati.\\
 La maggior parte degli algoritmi di previsione(Regressione lineare, Smoothed Moving Average, ecc.) sono supervisionati, ciò significa che abbiamo a disposizione un set di dati di apprendimento, ad esempio, nella regressione lineare questo set di dati conterrà dei valori di y, dati i valori di x. Questi algoritmi di previsione sono simili a quelli che troviamo nel campo nel networking per la previsione del traffico e nella rilevazione delle minacce interne come abbiamo visto con gli algoritmi SOM.\\
 Come abbiamo visto SOM non è un algoritmo supervisionato ma riesce a fornire una proiezione sui dati non lineare basato sulle reti neurali.
@@ -57,9 +58,16 @@ Nella tabella seguente, proviamo a identificare i vari problemi suddividendoli n
   \centering
   \includegraphics[width=.9\textwidth]{Immagine3.png} 
   \end{figure}
-Concludendo cerchiamo di astrarre i nostri problemi in maniera automatica.\\
-Come abbiamo detto in precedenza la raccolta dati è uno dei tasselli fondamentali, in seguito diventa fondamentale l’individuazione del problema con l’estrazione e la selezione dei dati, cercando di ottenere un insieme conforme al problema che ci troviamo a svolgere.\\
-Una volta individuato il problema e raccolto i dati necessari in input, verrà selezionato in automatico il modello adatto per prendere in input la mole di dati già estratta. Il modello preso in input i dati restituirà il risultato in maniera automatica che sarà l’output di tutto il processo già automatizzato.\\
-L’unica tolleranza la possiamo individuare nell’identificazione del problema, che in alcuni casi necessiterà di un intervento manuale; Ad esempio, nel forecasting le tecniche predittive sono assai diverse, abbiamo bisogno di qualche indizio in più su quale modello selezionare.\\
-L’efficienza di questo processo, soprattutto nell’identificazione del problema e la selezione del modello rallenta notevolmente, già scarsa nei singoli algoritmi di ML, si ritrova un peggioramento notevole dovuto all’identificazione del problema e alla scelta del modello di riferimento.
+Concludendo cerchiamo di astrarre i nostri problemi evidenziando un pattern generico di invarianza tra i passaggi elencati nei capitoli precedenti.\\
+Come notiamo nello schema, i 3 passaggi che diventano fondameli cercando di automatizzare questi processi sono:
+\begin{enumerate}
+  \item Raccolta Dati
+  \item Estrazione dai Dati 
+  \item Selezione del Modello
+\end{enumerate}
+Come abbiamo detto in precedenza la raccolta dati è uno dei tasselli fondamentali, in seguito l’individuazione del problema rende possibile un'estrazione e una selezione dei dati piú completa, cercando di ottenere un insieme conforme al problema che ci troviamo a svolgere.\\
+Una volta individuato il problema e raccolto i dati necessari in input, si proverá a selezionare in maniera automatica il modello adatto per prendere in input la mole di dati individuata.\\
+Il modello preso in input i dati, restituirà il risultato che sarà l’output risultante da tutto il processo.\\
+L’unica tolleranza la possiamo individuare nell’identificazione del problema, che in alcuni casi necessiterà di un intervento manuale; ad esempio, nel forecasting le tecniche predittive sono assai diverse, abbiamo bisogno di qualche indizio in più su quale modello selezionare.\\
+L’efficienza di questo processo, soprattutto nell’identificazione del problema e la selezione del modello, già scarsa nei singoli algoritmi di ML, si ritrova un peggioramento notevole dovuto all’identificazione del problema e alla scelta del modello di riferimento.
 \end{document}
