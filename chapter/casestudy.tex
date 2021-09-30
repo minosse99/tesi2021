@@ -35,13 +35,14 @@ Infine, ogni scenario di rete ha diverse caratteristiche e i ricercatori spesso 
 
 \newglossaryentry{over-fitting}{name={over-fitting},description={In presenza di un numero eccessivo di parametri rispetto al numero di osservazioni, un modello statistico si adatta ai dati osservati. Nei casi in cui l'apprendimento é stato effettuato troppo a lungo o dove c'era uno scarso numero di esempi di allenamento, il modello potrebbe adattarsi a caratteristiche che sono specifiche solo del \textit{training set} ma che non hanno riscontro nel resto dei casi.}}
 \newglossaryentry{under-fitting}{name={under-fitting},description={Scenario che si presenta quando in un modello statisco o nell'algoritmo di ML non si riesce a catturare adeguatamente la struttura sottostante i dati. Si verifica quando il modello o l'algoritmo non si adattano abbastanza ai dati.La classificazione soffre di un'eccessiva discrepanza.(Il modello é troppo semplice)}}
+\newglossaryentry{bias}{name={bias},description={costante che influenza una relazione tra le unitá di input e quelle di output}}
 
 \textit{Formulazione del problema}: Il processo di allenamento di ML spesso implica alti costi di tempo, è importante, dunque, formulare e astrarre correttamente il problema al primo step.\\
-In questa fase ci si occupa di dividere il problema in una delle Categorie ML: Classificazione, Raggruppamento o Decisionali.
+In questa fase ci si occupa di dividere il problema in una delle Categorie ML: Classificazione, Raggruppamento o Decisionali[\textit{Rif.pag.23}].\\
 Questo ci aiuta a decidere che tipo e che mole di dati ci serve per il modello.\\
 Un'astrazione impropria del problema può fornire un modello di apprendimento inadatto, che può risultare in prestazioni di apprendimento insoddisfacenti.\\
 \\
-\textit{Collezioni Dati}: In questa fase l’obiettivo è raccogliere un grande numero di dati rappresentativi senza bias, i dati di rete vengono raccolti da diversi livelli di rete in  accordo con l’applicazione di monitoraggio. Per esempio i problemi di classificazione del traffico  richiedono dataset contenti tracce a livello di pacchetto corrispondenti alle classi di applicazioni.\\
+\textit{Collezioni Dati}: In questa fase l’obiettivo è raccogliere un grande numero di dati rappresentativi senza \Gls{bias}, i dati di rete vengono raccolti da diversi livelli di rete in  accordo con l’applicazione di monitoraggio. Per esempio i problemi di classificazione del traffico  richiedono dataset contenti tracce a livello di pacchetto corrispondenti alle classi di applicazioni.\\
 Nel contesto del MLN i dati sono spesso collezionati in due fasi.
 Nella fase Offline, si raccolgono dati storici di alta-qualità importanti per le analisi e l’addestramento del modello mentre nella fase online si utilizzano dati dello stato di rete in real-time usati come input o come segnali di feedback per addestrare il modello.\\
 \\
@@ -61,7 +62,7 @@ Parlando di apprendimento automatico possiamo già separare i case study in 3 ca
 \begin{figure}[htbp]
 \center
 \includegraphics{RicercaMLNetworking.png}
-\caption{} 
+\caption{ML tecnique for MLN} 
 \end{figure}
 \\
 \newglossaryentry{port-based}{name={port-based},description={tecnica di classificazione basata sull'associazione $porta/protocollo$}}
@@ -81,7 +82,7 @@ Non è semplice considerare ML come una soluzione onnipotente e rilasciarla nel 
 Un \textit{Efficiente gestione delle risorse} e un ottimale \textit{adattamento di rete} sono le chiavi per aumentare le performance dei sistemi di rete.\\
 Alcuni esempi di problemi sono la pianificazione del traffico, Routing e controllo delle congestioni TCP. Tutti questi problemi possono essere formulati tramite problemi di decisione.\\
 È difficile risolvere questi problemi con sistemi di regole basate su algoritmi euristici a causa delle complessità dei diversi sistemi, degli input (rumorosi) e delle difficolta nell’ottimizzazione delle prestazioni in coda.\\
-Soprattutto assegnamento di parametri arbitrari basati su esperienze o azioni prese in seguito a predeterminate regole, spesso si traduce in algoritmo di pianificazione che è compreso dalle persone ma tutt’altro che ottimale.\\
+Soprattutto l'assegnamento di parametri arbitrari basati su esperienze o azioni prese in seguito a predeterminate regole, spesso si traduce in algoritmo di pianificazione che è compreso dalle persone ma tutt’altro che ottimale.\\
 Il \Gls{Deep Learning} è una soluzione promettente grazie alla sua capacità di caratterizzare le differenze tra input e output senza un coinvolgimento umano.
 
 \subsection{Opportunitá}
@@ -98,11 +99,11 @@ Con set di dati aperti, i test delle prestazioni sono un risultato inevitabile p
 \subsubsection{Automatici Protocolli di rete e architetture}
 
 Con una profonda conoscenza delle reti, i ricercatori gradualmente scoprono che le reti esistenti hanno molte limitazioni.\\
-Esiste tuttavia un ampio margine di miglioramento delle performance di rete e alla efficienza ridisegnando i protocolli di rete e la loro architettura. É Abbastanza difficile riprogettare un protocolo o un architettura in maniera automatica, tuttavia grazia alla comunitá del Machine Learning si sono trovate alternative piu semplici in questa direzione, come consentire agli agenti di comunicare con altri per completare un task in maniera cooperativa.\\
+Esiste tuttavia un ampio margine di miglioramento delle performance di rete e alla efficienza ridisegnando i protocolli di rete e la loro architettura.É Abbastanza difficile riprogettare un protocolo o un architettura in maniera automatica, tuttavia grazia alla comunitá del Machine Learning si sono trovate alternative piu semplici in questa direzione, come consentire agli agenti di comunicare con altri per completare un task in maniera cooperativa.\\
 In ogni modo nuovi risultati mostrano come i modelli di ML hanno l’abilita di generare elementi esistenti nel mondo reale e creare strategie che le persone non sono in grado di predire.\\
-Tuttavia questi risultati generati sono tutt’ora lontani dalla generazione di un nuovo protocollo di rete.\\
-Cé un grande potenziale e la possibilitá di creare nuovi componenti di rete senza il coinvolgimento umano, i quali possono aggiornare la loro conoscenza in base al sistema di rete.
-
+Tuttavia questi risultati generati sono tutt’ora lontani dalla possibilitá di generare un nuovo protocollo di rete.\\
+C'é un grande potenziale e una grande volontá creare nuovi componenti di rete senza il coinvolgimento umano, i quali possono aggiornare la loro conoscenza in base al sistema di rete.
+\newpage
 \subsubsection{Promuovere lo sviluppo del ML}
 
 Quando si applica il ML nei campi di rete, a causa di richieste dei sistemi di rete e pratici problemi implementativi, alcune limitazioni ereditarie e alcuni problemi emergenti del ML possono essere inoltrati a una nuova fase di compressione con il beneficio dell’unione di due comunitá di ricerca.
@@ -113,9 +114,10 @@ Sebbene alcuni esperimenti sono stati condotti sotto specifici ambienti di rete,
 \cite{wang2017machine,ridwan2021applications,boutaba2018comprehensive}
 \newpage
 \section{Apprendimento automatico nella Sicurezza Informatica}
+\newglossaryentry{big data}{name={big data},description={raccolta di dati informativi particolarmente estesa in termini di volume, varietá e velocitá di trasferimento}}
 \subsection{Introduzione}
-La sicurezza informatica sta diventando il rischio chiave per qualsiasi azienda poiché il numero di attacchi sta crescendo e i nostri dati diventano sempre piu vulnerabili.\\
-L’Intelligenza Artificale e il Machine Learning possono aiutare a rilevare minacce e fornire consigli agli analisti per sapere difendersi di conseguenza.\\
+La sicurezza informatica sta diventando il rischio chiave per qualsiasi azienda poiché il numero di attacchi sta crescendo e i nostri dati diventano sempre piú vulnerabili.\\
+L’Intelligenza Artificiale e il Machine Learning possono aiutare a rilevare minacce e fornire consigli agli analisti per sapere difendersi di conseguenza.\\
 ML puó essere usato per identificare target avanzati, le vulnerabilitá dell’infrastruttura ed eventuali exploit.\\
 Il numero di minacce è in aumento e rischia di compromettere la nostra privacy e la nostra professionalitá quotidianamente, l’evolversi di questo campo rischia di lasciare indietro gli analisti che non riescono a tracciare i nuovi malware e i nuovi attacchi.\\
 Nuovi attacchi e malware sofisticati sono stati in grado di aggirare il livello di sicurezza della rete e degli endpoint per fornire attacchi informatici a velocità allarmanti.\\
@@ -124,7 +126,7 @@ Le reti e le piattaforme sono costantemente sotto attacco, questi attacchi sono 
 Gli avversari stanno gia usando il ML per rendere maggiormente evoluti i loro attacchi.
 \cite{fraley2017promise,bresniker2019grand,MLSecurity}\\
 In questa sezione non andremo ad analizzare tutti i rischi della sicurezza informatica, perché sarebbe troppo dispendioso e non finalizzato verso gli obiettivi che ci eravamo prefissati.
-Bensí andremo ad analizzare un campo specifico, che dovrebbe permettere un confronto con il \textit{case study} precedente ovvero l'\textit{Insider Threat Detection}(Individuazione delle minacce interne).\\
+Bensí andremo ad analizzare un campo specifico, che dovrebbe permettere un confronto con il caso di studio precedente ovvero l'\textit{Insider Threat Detection}(Individuazione delle minacce interne).\\
 Andiamo di seguito ad analizzare le fasi principali del flusso di lavoro in questo campo, raggrupandole piú genericamente in 2 macrocategorie (preprocessamento dei dati e algoritmi di apprendimento) che analizziamo qui di seguito
 
 \subsection{Pre Processamento dei dati}
@@ -142,17 +144,17 @@ Possiamo distinguere i dati in dati sequenziali e dati numerici. I dati numerici
 I dati numerici vengono esportati per rappresentare le caratteristiche degli utenti e le attivitá durante un determinato periodo, parliamo di caratteristiche degli utenti e caratteristiche delle attivitá.
 Le caratteristiche degli utenti includono ogni ruolo dell’utente, unitá funzionale, dipartimento ecc…\\
 Le caratteristiche delle attivitá invece sono per lo piú estratte contando il numero di attivitá in ogni categoria(log on/off , dispositivo connesso/disconnesso, file, email) in un determinato periodo di tempo.\\
-I dati sequenziali si riassumono come la sequenza di dati;  consiste in un ordinato elenco delle azioni intraprese da un utente raccolte di solito quotidianamente o settimanalmente.\\
-\cite{le2020analyzing}
+I dati sequenziali si riassumono come la sequenza ordinata di questi ultimi; e consiste in un ordinato elenco delle azioni intraprese da un utente raccolte di solito quotidianamente o settimanalmente.
+\cite{le2020analyzing}\\
 \begin{figure}[htbp]
 \center
 \includegraphics[height=90mm]{workflowIntrusionThreat.png}
 \caption{Workflow Intrusion Threat} 
 \end{figure}
-\newpage
+
 \subsection{Algoritmi di apprendimento}
 
-Prendiamo in considerazioni 3 algoritmi: Self-Organizing Map, Hidden Markov Model e Decision Tree; sviluppati per apprendere e modellare i dati per rilevare anomalie/minacce interne.\\
+Come raffigurato dallo schema 2.3 prendiamo in considerazioni 3 algoritmi: Self-Organizing Map, Hidden Markov Model e Decision Tree; sviluppati per apprendere e modellare i dati per rilevare anomalie/minacce interne.\\
 L’obiettivo è di valutare sia gli algoritmi di apprendimento supervisionati e non.\\
 Gli algoritmi di apprendimento supervisionati sono adatti per analizzare i dati con basi di veritá mentre gli algoritmi non supervisionati sono efficaci per generare avvertimenti di attivitá anomale.
 
@@ -162,7 +164,7 @@ Gli algoritmi di apprendimento supervisionati sono adatti per analizzare i dati 
 
 SOM è un un algoritmo non supervisionato basato sulle rete neurali; produce una proiezioni di dati non lineare e ordinata da un input preso in spazio multidimensionale.\\
 Il SOM è costituito da una rete di neuroni artificiali i cui pesi sono continuamente adattati ai vettori presentati in ingresso nel relativo insieme di addestramento.\\
-La rete neurale descritta come un insieme di neuroni artificali, ciascuno con un precisa collocazione e adiacenti gli uni dagli altri sulla mappa rappresentativa degli output, seguendo un processo dove il nodo avente un vettore di pesi piú vicino a quello dell’input si aggiudica i restanti, mentre i restanti son aggiornati in modo da avvicinarli al vettore in ingresso.\\
+La rete neurale descritta come un insieme di neuroni artificali, ciascuno con una precisa collocazione e adiacenti gli uni dagli altri sulla mappa rappresentativa degli output, seguendo un processo dove il nodo avente un vettore di pesi piú vicino a quello dell’input si aggiudica i restanti, mentre i restanti son aggiornati in modo da avvicinarli al vettore in ingresso.\\
 Quando un nodo vince una competizione, i pesi dei nodi adiacenti dove piú un nodo è lontano dal cosidetto “vincitore” meno deve essere evidente la sua variazione dei pesi.\\
 Il processo viene ripetuto per ogni vettore dell’insieme di training per un certo numero di cicli, la mappa cosi riesce ad associare i nodi d’uscita con gruppi e/o schemi ricorrenti nell’insieme di dati in ingresso.\\
 Vengono valutati 2 tipi di approcci per addestrare il SOM: i dati che rappresentono tutte le classi (minacce interne/esterne) altrimenti solo i dati che rappresentano i normali comportamenti dell’utente.\\
@@ -177,7 +179,7 @@ Un modello di Markov Nascosto è una \Gls{Markov} dove gli stati non sono dirett
 Possiamo usare il HMM con l’algoritmo di Baum-Welch che data una sequenza dell’uscita o un insieme di tali sequenze, l’obiettivo è di trovare l’insieme piú probabile per il quale si possano dichiarare le probabilitá dell’uscita e di transizione.\\
 Ció avviene addestrando i parametri dell’HMM mediante il gruppo di dati relativi alle sequenze di azioni di ciascun utente in un determinato periodo di tempo, in questo caso: settimanalmente.\\
 Quindi, per ciascuna nuova sequenza di azioni dell'utente, l'HMM dell'utente viene utilizzato per calcolare la probabilità di log della sequenza.\\
-La sequenza viene segnalata se il valore di probabilitá di log è superiore a una certa soglia, se la sequenza non viene flaggata oppure viene considerata da un analista “non rilevante`` viene usata nella combinazione con le azioni precedenti per addestrare il modello HMM dell’utente.
+La sequenza viene segnalata se il valore di probabilitá di log è superiore a una certa soglia, se la sequenza non viene flaggata oppure viene considerata da un'analista “non rilevante`` viene usata nella combinazione con le azioni precedenti per addestrare il modello HMM dell’utente.
 
 \subsubsection{Decision Tree}
 
