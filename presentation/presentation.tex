@@ -3,15 +3,17 @@
 \usepackage{booktabs} 
 \mode<presentation>{
     \usetheme{madrid}
-    \definecolor{mygreen}{rgb}{0, 0.75, 0} % UBC Blue (primary)
+    \definecolor{mygreen}{rgb}{0.1, 0.67, 0.1} 
     \usecolortheme[named=mygreen]{structure}
 }
+
+\graphicspath{ {.././image/} }
 
 \title{STRUMENTI DI ORCHESTRAZIONE E ANALISI DI WORKFLOW NEL MACHINE LEARNING}
 \subtitle[]{Analisi Case Study e illustrazione Framework di Orchestrazione di pipeline di lavoro}
 \author{Simone Boldrini}
 \date{13 Ottobre 2021}
-\institute[Unibo]{Alma Mater Studiorum - Universitá di Bologna \\ Facoltá di Scienze}
+\institute[]{Alma Mater Studiorum - Universitá di Bologna \\ Facoltá di Scienze}
 
 \begin{document}
 
@@ -21,39 +23,77 @@
 {
     \begin{frame}
     \setbeamercolor{background canvas}{bg=green} 
-    \frametitle{Table of Contents}
+    \frametitle{Indice}
     \tableofcontents[currentsection]
     \end{frame}
 }
-\section{Casi di Studio}
+
+\section{Introduzione}
 \begin{frame}
+    \frametitle{Introduzione}
     
-\frametitle{Casi di studio1}
-Contents of the first slide
+    \newtheorem{Apprendimento Automatico}{Apprendimento Automatico}
+
+    \begin{Apprendimento Automatico}
+        L'\alert{apprendimento automatico} é un ramo dell'Intelligenza Artificiale, che raccoglie metodi in grado di migliorare la performance di un algoritmo, autonomamente, nell'identificare pattern di dati.
+    \end{Apprendimento Automatico}
+    Gli algoritmi li suddividiamo in 3 categorie:
+    \begin{itemize}
+        \item Supervised Learning
+        \item Unsupervised Learning
+        \item Reinforcement Learning
+    \end{itemize}
 \end{frame}
-\subsection{MLN}
 \begin{frame}
-\frametitle{Second Slide}
-Contents of the second slide
+ \frametitle{Modelli} 
+ \newtheorem{Modello}{Modello}
+ \begin{Modello}
+Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritmo.
+ \end{Modello}  
+ I modelli di ML assimilano i dati di training, con l'obiettivo di individuare potenziali relazioni tra i dati di input e quelli di output.
 \end{frame}
-\subsection{Insider Threat Detection}
 \begin{frame}
-    \frametitle{Raccolta Dati}
-    Contents of the second slide
+    \frametitle{Apprendimento automatico nel Campo delle Reti}
+    L'\alert{apprendimento automatico} permette ai sistemi di imparare automaticamente a prendere decisioni o predizioni basati sull'esperienza.\\
+    Con la sviluppo di ML in questo campo, ricercatori e operatori di rete possono affrontare vari tipi di reti e applicazioni; i quali possono cambiare a seconda delle performance e dei requisiti.
+    \begin{figure}[htbp]
+        \includegraphics[width=.75\textwidth,height=.62\textheight]{RicercaMLNetworking.png}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Insider Threat Detection}
+    \begin{figure}
+        \includegraphics[width=.60\textwidth,height=.80\textheight]{workflowIntrusionThreat.png}
+    \end{figure}
 \end{frame}
 \section{Analisi}
+
 \begin{frame}
-    \frametitle{Individuazione del Problema}
-    Contents of the second slide
+    \frametitle{Invariante di Processo}
+    Analizzato i dversi casi di studio, abbiamo cercato di astrarre i problemi evidenziando un pattern generico di invariante.
+    \begin{figure}[htbp]
+        \includegraphics[width=0.9\textwidth]{Immagine3.png}
+    \end{figure}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Raccolta Dati}
+\end{frame}
+
 \begin{frame}
     \frametitle{Elaborazione del Modello}
-    Contents of the second slide
 \end{frame}
-\begin{frame}
-    \frametitle{Conclusioni}
-    Contents of the second slide
-\end{frame}
-\section{Framework}
 
+\begin{frame}
+    \frametitle{Risultato}
+    In quest'ultima fase definiamo l'output desiderato:
+    \begin{itemize}
+        \item Classificazione
+        \item Regressione 
+        \item Clustering
+    \end{itemize}
+    \begin{figure}
+        \includegraphics[width=0.9\textwidth , height=0.7\textheight]{categoryML.png}
+    \end{figure}
+\end{frame}
 \end{document}
