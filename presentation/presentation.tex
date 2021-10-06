@@ -2,9 +2,18 @@
 \usepackage{graphicx} 
 \usepackage{booktabs} 
 \mode<presentation>{
-    \usetheme{Madrid}
-    \definecolor{mygreen}{rgb}{0.1, 0.67, 0.1} 
-    \usecolortheme[named=mygreen]{structure}
+    
+\definecolor{MSUgreen}{RGB}{0,100,11} 
+\usetheme{Boadilla}
+\usecolortheme{spruce}
+\setbeamercolor{block title}{bg=MSUgreen!10, fg=MSUgreen!60!black}
+\setbeamercolor{navigation symbols dimmed}{fg=MSUgreen!40!white}
+\setbeamercolor{navigation symbols}{fg=MSUgreen!40!white}
+\setbeamertemplate{itemize item}{\color{MSUgreen}\textbullet}
+\setbeamercolor{section in toc}{fg=MSUgreen}
+\setbeamercolor{section number projected}{bg=MSUgreen,fg=white}
+\setbeamercolor{subsection in toc}{fg=MSUgreen}
+\setbeamercolor{subsection number projected}{bg=MSUgreen,fg=white}
 }
 
 \graphicspath{ {.././image/} }
