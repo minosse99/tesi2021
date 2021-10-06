@@ -2,14 +2,14 @@
 \usepackage{graphicx} 
 \usepackage{booktabs} 
 \mode<presentation>{
-    \usetheme{madrid}
+    \usetheme{Madrid}
     \definecolor{mygreen}{rgb}{0.1, 0.67, 0.1} 
     \usecolortheme[named=mygreen]{structure}
 }
 
 \graphicspath{ {.././image/} }
 
-\title{STRUMENTI DI ORCHESTRAZIONE E ANALISI DI WORKFLOW NEL MACHINE LEARNING}
+\title[Machine Learning]{STRUMENTI DI ORCHESTRAZIONE E ANALISI DI WORKFLOW NEL MACHINE LEARNING}
 \subtitle[]{Analisi Case Study e illustrazione Framework di Orchestrazione di pipeline di lavoro}
 \author{Simone Boldrini}
 \date{13 Ottobre 2021}
@@ -17,18 +17,12 @@
 
 \begin{document}
 
-\maketitle
+\begin{frame}
+    \titlepage
+\end{frame}
 
-\AtBeginSection[]
-{
-    \begin{frame}
-    \setbeamercolor{background canvas}{bg=green} 
-    \frametitle{Indice}
-    \tableofcontents[currentsection]
-    \end{frame}
-}
 
-\section{Introduzione}
+\section*{Introduzione}
 \begin{frame}
     \frametitle{Introduzione}
     
@@ -52,7 +46,17 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
  \end{Modello}  
  I modelli di ML assimilano i dati di training, con l'obiettivo di individuare potenziali relazioni tra i dati di input e quelli di output.
 \end{frame}
-\begin{frame}
+
+
+
+    \begin{frame}
+    \setbeamercolor{background canvas}{bg=green} 
+    \frametitle{Indice}
+    \tableofcontents[]
+    \end{frame}
+    \section{Casi di Studio}
+    \subsection{MLN}
+    \begin{frame}
     \frametitle{Apprendimento automatico nel Campo delle Reti}
     L'\alert{apprendimento automatico} permette ai sistemi di imparare automaticamente a prendere decisioni o predizioni basati sull'esperienza.\\
     Con la sviluppo di ML in questo campo, ricercatori e operatori di rete possono affrontare vari tipi di reti e applicazioni; i quali possono cambiare a seconda delle performance e dei requisiti.
@@ -60,12 +64,23 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
         \includegraphics[width=.75\textwidth,height=.62\textheight]{RicercaMLNetworking.png}
     \end{figure}
 \end{frame}
+
+\begin{frame}
+    \frametitle{MLN}
+    \begin{figure}
+        \includegraphics[width=.95\textwidth,height=.42\textheight]{WorkFlowNetworking.png}
+    \end{figure}
+    
+
+\end{frame}
+\subsection{Insider Threat Detection}
 \begin{frame}
     \frametitle{Insider Threat Detection}
     \begin{figure}
         \includegraphics[width=.60\textwidth,height=.80\textheight]{workflowIntrusionThreat.png}
     \end{figure}
 \end{frame}
+
 \section{Analisi}
 
 \begin{frame}
@@ -78,10 +93,16 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
 
 \begin{frame}
     \frametitle{Raccolta Dati}
+    La raccolta dati é fondamentale in ogni processo di apprendimento automatico.
+    Viene diversificata a seconda del problema che andremo a trattare.
+    Di solito i dati vengono suddivisi a seconda della \alert{metodologia di raccolta}.
 \end{frame}
 
 \begin{frame}
     \frametitle{Elaborazione del Modello}
+    \begin{figure}[htbp]
+        \includegraphics{MLProcess.png}
+    \end{figure}
 \end{frame}
 
 \begin{frame}
@@ -95,5 +116,48 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
     \begin{figure}
         \includegraphics[width=0.9\textwidth , height=0.7\textheight]{categoryML.png}
     \end{figure}
+\end{frame}
+\section{Framework}
+
+\begin{frame}    
+        \frametitle{Framework}
+        \newtheorem{fw}{Strumenti di Orchestrazione}
+
+        \begin{fw}
+            Questi strumenti che permettono l'orchestrazione di pipeline di Machine Learning  hanno l'obiettivo di semplificare il processo di gestione e automatizzare l'implementazione dei modelli di ML.
+        \end{fw}
+        Gli strumenti che andremo a mostrare di seguito sono tutti \textit{open-source}, e si focalizzano su 3 punti chiave:
+        \begin{itemize}
+            \item raccolta dati
+            \item creazione e implementazione del modello
+            \item distribuzione(permettendo inoltre la riproduzione ed il monitoraggio)
+        \end{itemize}
+\end{frame}
+\begin{frame}
+    \frametitle{ZenML}
+
+    
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kedro}
+
+    
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Flyte}
+
+    
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MLRun}
+
+    
+
 \end{frame}
 \end{document}
