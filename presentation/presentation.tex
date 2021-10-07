@@ -19,7 +19,7 @@
 \graphicspath{ {.././image/} }
 
 \title[Machine Learning]{STRUMENTI DI ORCHESTRAZIONE E ANALISI DI WORKFLOW NEL MACHINE LEARNING}
-\subtitle[]{Analisi Case Study e illustrazione Framework di Orchestrazione di pipeline di lavoro}
+\subtitle[]{Analisi case study e illustrazione framework di orchestrazione di pipeline}
 \author{Simone Boldrini}
 \date{13 Ottobre 2021}
 \institute[]{Alma Mater Studiorum - Universitá di Bologna \\ Facoltá di Scienze}
@@ -94,10 +94,19 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
 
 \begin{frame}
     \frametitle{Invariante di Processo}
-    Analizzato i dversi casi di studio, abbiamo cercato di astrarre i problemi evidenziando un pattern generico di invariante.
+    Analizzato i diversi casi di studio, abbiamo cercato di astrarre i problemi evidenziando un pattern generico di invariante.
     \begin{figure}[htbp]
         \includegraphics[width=0.9\textwidth]{Immagine3.png}
     \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{.}
+    \begin{itemize}
+        \item Raccolta Dati 
+        \item Elaborazione Modello
+        \item Risultato
+    \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -144,28 +153,44 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
 \end{frame}
 \begin{frame}
     \frametitle{ZenML}
-
-    
+    \begin{itemize}
+        \item Libreria Python
+        \item Permette affiancamento ad altro strumento di orchestrazione
+        \item Garantisce riproducibilitá degli addestramenti
+        \item Permette di memorizzare gli stati della pipeline nella cache %per iterazioni degli esperimenti piú veloci
+    \end{itemize}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Kedro}
 
-    
+    \begin{itemize}
+        \item GUI
+        \item Modulare
+        \item Favorisce il versioning
+    \end{itemize}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Flyte}
-
+\begin{itemize}
+    \item Basato su python e K8s
+    \item Estendibile attraverso diversi plug-in
+    \item Giá molto diffuso: gestisce piú di 10mila Workflow
+\end{itemize}
     
 
 \end{frame}
 
 \begin{frame}
     \frametitle{MLRun}
-
+    \begin{itemize}
+        \item GUI 
+        \item Servizio Server-less [architettura permette di convertire codice in microservizi]
+        \item Vasto reperto di plug-in
+    \end{itemize}
     
 
 \end{frame}
