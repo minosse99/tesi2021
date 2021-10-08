@@ -1,5 +1,7 @@
 \documentclass[xcolor=dvipsnames]{beamer}
 \usepackage{graphicx} 
+\usepackage{tabularx}
+\usepackage{array}
 \usepackage{booktabs} 
 \mode<presentation>{
     
@@ -26,19 +28,30 @@
 
 \begin{document}
 
-\begin{frame}
-    \titlepage
-\end{frame}
-
 
 \section*{Introduzione}
+
+\begin{frame}
+    \titlepage
+  \end{frame}
+
+  \begin{frame}
+      \frametitle{Introduzione}
+      \alert{Obiettivo}: ricerca di un'astrazione di un'invariante di processo per i processi di Machine Learning 
+      \begin{itemize}
+          \item<1-> Casi di studio
+          \item<2-> Analisi e confronto tra CS
+          \item<3-> Workflow Generico
+          \item<4-> Framework
+      \end{itemize}
+  \end{frame}
 \begin{frame}
     \frametitle{Introduzione}
     
     \newtheorem{Apprendimento Automatico}{Apprendimento Automatico}
 
     \begin{Apprendimento Automatico}
-        L'\alert{apprendimento automatico} é un ramo dell'Intelligenza Artificiale, che raccoglie metodi in grado di migliorare la performance di un algoritmo, autonomamente, nell'identificare pattern di dati.
+        L'\alert{apprendimento automatico} raccoglie metodi in grado di migliorare la performance di un algoritmo, autonomamente, nell'identificare pattern di dati.
     \end{Apprendimento Automatico}
     Gli algoritmi li suddividiamo in 3 categorie:
     \begin{itemize}
@@ -47,29 +60,19 @@
         \item Reinforcement Learning
     \end{itemize}
 \end{frame}
-\begin{frame}
- \frametitle{Modelli} 
- \newtheorem{Modello}{Modello}
- \begin{Modello}
-Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritmo.
- \end{Modello}  
- I modelli di ML assimilano i dati di training, con l'obiettivo di individuare potenziali relazioni tra i dati di input e quelli di output.
-\end{frame}
 
+%    \begin{frame}
+%    \setbeamercolor{background canvas}{bg=green} 
+%    \frametitle{Indice}
+%    \tableofcontents[]
+%    \end{frame}
 
-
-    \begin{frame}
-    \setbeamercolor{background canvas}{bg=green} 
-    \frametitle{Indice}
-    \tableofcontents[]
-    \end{frame}
     \section{Casi di Studio}
     \subsection{MLN}
+
     \begin{frame}
-    \frametitle{Apprendimento automatico nel Campo delle Reti}
-    L'\alert{apprendimento automatico} permette ai sistemi di imparare automaticamente a prendere decisioni o predizioni basati sull'esperienza.\\
-    Con la sviluppo di ML in questo campo, ricercatori e operatori di rete possono affrontare vari tipi di reti e applicazioni; i quali possono cambiare a seconda delle performance e dei requisiti.
-    \begin{figure}[htbp]
+    \frametitle{Apprendimento automatico nel Campo delle Reti} % da rifare
+   Qui di seguito mostriamo un'insieme di problemi nel campo del Networking che permette l'integrazione con l'apprendimento automatico \begin{figure}[htbp]
         \includegraphics[width=.75\textwidth,height=.62\textheight]{RicercaMLNetworking.png}
     \end{figure}
 \end{frame}
@@ -98,15 +101,6 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
     \begin{figure}[htbp]
         \includegraphics[width=0.9\textwidth]{Immagine3.png}
     \end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{.}
-    \begin{itemize}
-        \item Raccolta Dati 
-        \item Elaborazione Modello
-        \item Risultato
-    \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -151,15 +145,61 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
             \item distribuzione(permettendo inoltre la riproduzione ed il monitoraggio)
         \end{itemize}
 \end{frame}
+
+\begin{frame}
+    \begin{minipage}{.40\textwidth}
+        \textbf{ZenML}
+        \begin{itemize}
+            \item Libreria Python
+            \item Permette affiancamento ad altro strumento di orchestrazione
+            \item Garantisce riproducibilitá degli addestramenti
+       %     \item Permette di memorizzare gli stati della pipeline nella cache %per iterazioni degli esperimenti piú veloci
+        \end{itemize}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{.40\textwidth}
+    \textbf{Kedro}
+    \begin{itemize}
+        \item GUI
+        \item Modulare
+        \item Favorisce il versioning 
+        \end{itemize}
+
+\end{minipage}
+\hfill
+  \begin{minipage}{.40\textwidth}
+\textbf{Flyte}
+    \begin{itemize}
+        \item Basato su python e K8s
+        \item Estendibile attraverso diversi plug-in
+        \item gestisce piú di 10mila Workflow
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}{.40\textwidth}
+    \textbf{MLRun}
+    \begin{itemize}
+        \item GUI 
+        \item Servizio Server-less [architettura permette di convertire codice in microservizi]
+        \item Vasto reperto di plug-in
+    \end{itemize}
+    
+\end{minipage}
+
+\end{frame}
+
+
+
 \begin{frame}
     \frametitle{ZenML}
+        
+   ZenML
     \begin{itemize}
         \item Libreria Python
         \item Permette affiancamento ad altro strumento di orchestrazione
         \item Garantisce riproducibilitá degli addestramenti
         \item Permette di memorizzare gli stati della pipeline nella cache %per iterazioni degli esperimenti piú veloci
     \end{itemize}
-
 \end{frame}
 
 \begin{frame}
@@ -170,7 +210,7 @@ Un Modello di ML é l'output generato in seguito all'addestramento dell'algoritm
         \item Modulare
         \item Favorisce il versioning
     \end{itemize}
-
+    
 \end{frame}
 
 \begin{frame}
