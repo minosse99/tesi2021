@@ -20,7 +20,7 @@ In tutti i casi di studio analizzati, anche se molto diversi tra loro abbiamo tr
 \subsection{Raccolta Dati}
 La raccolta dati è fondamentale in ogni processo di apprendimento automatico; spesso si diversifica quando viene effettuata la prima elaborazione.\\
 Nonostante i dati risultino in essere molto diversi tra loro, la loro raccolta può trovare dei punti d’accordo.\\
-Spesso questi dati vengono suddivisi a seconda della metodologia di raccolta: il caso di studio dei recomandation system, che diversifica la raccolta dati come dati espliciti(input degli utenti) e impliciti(informazioni raccolte da flussi di dati), mentre nel campo dell’Intrusion Detection vengono differenziati tra dati statici(tra cui l’informazione dell’organizzazione e dei dipendenti) e dinamici(quali gli input dei dipendenti stessi).\\
+Spesso questi dati vengono suddivisi a seconda della metodologia di raccolta: il caso di studio dei recomandation system, che diversifica la raccolta dati come dati espliciti(input degli utenti) e impliciti(informazioni raccolte da flussi di dati), mentre nel campo dell’Insider Threat Detection vengono differenziati tra dati statici(tra cui l’informazione dell’organizzazione e dei dipendenti) e dinamici(quali gli input dei dipendenti stessi).\\
 Nel campo della previsione abbiamo una valutazione dei dati in merito a diversi parametri quali: consistenza, precisione, rilevanza ecc. \\
 Questi dati, però sono ideali e di conseguenza verranno puliti e analizzati per lacune e anomalie, verificati per pertinenza e ripristinati.\\
 Nel campo del Networking invece i dati vengono raccolti in due fasi:
@@ -32,7 +32,7 @@ Nel campo della radiologia non abbiamo questa distinzione, né tantomeno questa 
 \newpage
 \subsection{Elaborazione del Modello}
 In questa fase intendiamo anche la ricerca oppure la costruzione del modello per quei particolari dati, a seconda che il tipo di risultato sia una predizione o una classificazione.\\
-Come abbiamo visto nel campo dell’Intrusion Detection, per costruire o comunque elaborare un modello, diventa fondamentale il tipo di problema che vogliamo andare a risolvere:
+Come abbiamo visto nel campo dell’Insider Threat Detection, per costruire o comunque elaborare un modello, diventa fondamentale il tipo di problema che vogliamo andare a risolvere:
 se vogliamo aspettare che vengano generati degli avvertimenti per attività anomale useremo un modello costruito grazie ad un algoritmo non supervisionato, mentre ad esempio nel campo del Networking la classificazione del traffico diventa un problema per il quale una classificazione efficiente necessita di un algoritmo supervisionato.\\
 Al contrario la maggior parte delle immagini mediche senza annotazioni potrebbero non essere utili per una varietà di scenari di Supervised learning, diventa necessario in questo campo l'utilizzo degli algoritmi di Reinforcement Learning.\\
 Una volta ottenuto un insieme di immagini mediche contenenti annotazioni, quindi targettizzati, é possibile utilizzare sia algoritmi Supervised Learning, per classificare e raggruppare radiografie simili, sia algoritmi non supervisionati che ad esempio, grazie ad un vettore di caratteristiche ciascuno associato a un caso. Il vettore di caratteristiche della nuova immagine può essere confrontato con quelli esistenti utilizzando operatori vettoriali.\\

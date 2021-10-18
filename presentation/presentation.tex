@@ -37,7 +37,7 @@
 
   \begin{frame}
       \frametitle{Introduzione}
-      \alert{Obiettivo}: icerca di un'astrazione di un'invariante di processo per i processi di Machine Learning 
+      \alert{Obiettivo}: Ricerca di un'astrazione di un'invariante di processo per i processi di Machine Learning 
       \begin{itemize}
           \item<1-> Casi di studio
           \item<2-> Analisi e confronto tra CS
@@ -51,7 +51,7 @@
     \newtheorem{Apprendimento Automatico}{Apprendimento Automatico}
 
     \begin{Apprendimento Automatico}
-        L'\alert{apprendimento automatico} raccoglie metodi in grado di migliorare la performance di un algoritmo, autonomamente, nell'identificare pattern di dati.
+        L'\alert{apprendimento automatico} raccoglie metodi in grado di migliorare la performance di un algoritmo  nell'identificare pattern di dati, in modo autonomo.
     \end{Apprendimento Automatico}
     Gli algoritmi li suddividiamo in 3 categorie:
     \begin{itemize}
@@ -65,8 +65,8 @@
 
     \begin{frame}
     \frametitle{Apprendimento automatico nel Campo delle Reti} % da rifare
-   Qui di seguito mostriamo un'insieme di problemi nel campo del Networking che permette l'integrazione con l'apprendimento automatico
-   \begin{figure}[htbp]
+   Insieme di problemi nel campo del Networking che permette l'integrazione con l'apprendimento automatico
+    \begin{figure}[htbp]
         \includegraphics[width=.75\textwidth,height=.62\textheight]{RicercaMLNetworking.png}
     \end{figure}
 \end{frame}
@@ -89,13 +89,14 @@
 
 \section{Analisi}
 
-%\begin{frame}
-%    \frametitle{Invariante di Processo}
-%    Analizzato i diversi casi di studio, abbiamo cercato di astrarre i problemi evidenziando un pattern generico di invariante.
-%    \begin{figure}[htbp]
-%        \includegraphics[width=0.9\textwidth]{Immagine3.png}
-%    \end{figure}
-%\end{frame}
+%\
+\begin{frame}
+\frametitle{Invariante di Processo}
+   Analizzati i diversi casi di studio, abbiamo cercato di astrarre i problemi evidenziando un pattern generico di invariante.
+    \begin{figure}[htbp]
+        \includegraphics[width=0.9\textwidth]{Immagine3.png}
+    \end{figure}
+\end{frame}
 
 \begin{frame}
     \frametitle{Raccolta Dati}
@@ -128,15 +129,14 @@
 \begin{frame}    
         \frametitle{Framework}
         \newtheorem{fw}{Strumenti di Orchestrazione}
-
         \begin{fw}
-            Questi strumenti che permettono l'orchestrazione di pipeline di Machine Learning  hanno l'obiettivo di semplificare il processo di gestione e automatizzare l'implementazione dei modelli di ML.
+            Gli strumenti di orchestrazione di pipeline di ML hanno l'obiettivo di semplificare il processo di gestione e automatizzare l'implementazione dei modelli.
         \end{fw}
         Gli strumenti che andremo a mostrare di seguito sono tutti \textit{open-source}, e si focalizzano su 3 punti chiave:
         \begin{itemize}
             \item raccolta dati
             \item creazione e implementazione del modello
-            \item distribuzione(permettendo inoltre la riproduzione ed il monitoraggio)
+            \item distribuzione%(permettendo inoltre la riproduzione ed il monitoraggio)
         \end{itemize}
 \end{frame}
 
@@ -176,7 +176,7 @@
     \begin{itemize}
         \item Basato su python e K8s
         \item Estendibile attraverso diversi plug-in
-        \item gestisce piú di 10mila Workflow
+        \item Gestisce piú di 10mila Workflow
     \end{itemize}
     \end{column}
     
@@ -185,11 +185,10 @@
     \textbf{MLRun}
     \begin{itemize}
         \item GUI 
-        \item Servizio Server-less [architettura permette di convertire codice in microservizi]
+        \item Servizio Server-less
         \item Vasto reperto di plug-in
     \end{itemize}
     \end{column}
     \end{columns}
 \end{frame}
-
 \end{document}
